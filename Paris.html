@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Paris Adventure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
 
+        #header {
+            background-color: #ffcccb;
+            padding: 30px;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        #main-content {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .text-content {
+            padding: 20px;
+        }
+
+        .text-content h2 {
+            color: #d84b6b;
+        }
+
+        .text-content p {
+            line-height: 1.6;
+        }
+
+        #itinerary {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .itinerary-day {
+            flex: 1;
+            min-width: 280px;
+            padding: 15px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .itinerary-day h3 {
+            margin-bottom: 10px;
+            color: #d84b6b;
+        }
+
+        .itinerary-day p {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .itinerary-day {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>Your Dream Trip to Paris</h1>
+        <p>Explore the City of Lights with a journey filled with iconic landmarks, rich culture, and unforgettable memories.</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        
+        <!-- First Section with Image and Description -->
+        <div class="section">
+            <img src="parisEiffel.jpg" alt="Eiffel Tower">
+            <div class="text-content">
+                <h2>Eiffel Tower</h2>
+                <p>Your trip starts with a visit to the most iconic monument in the world, the Eiffel Tower. Take in stunning panoramic views of Paris from the top, and enjoy a romantic dinner at its elegant restaurant.</p>
+            </div>
+        </div>
+
+        <!-- Second Section with Image and Description -->
+        <div class="section">
+            <img src="louvre.jpg" alt="Louvre Museum">
+            <div class="text-content">
+                <h2>Louvre Museum</h2>
+                <p>Immerse yourself in art and history at the Louvre, home to masterpieces such as the Mona Lisa and Venus de Milo. Stroll through the museum's grand halls and experience its vast collection of artworks from all over the world.</p>
+            </div>
+        </div>
+
+        <!-- Third Section with Image and Description -->
+        <div class="section">
+            <img src="montmartre.jpg" alt="Montmartre">
+            <div class="text-content">
+                <h2>Montmartre & Sacré-Cœur</h2>
+                <p>Wander through the charming streets of Montmartre, the artist's district of Paris. Climb up to the Sacré-Cœur Basilica for a breathtaking view of the city, and visit local cafés where famous artists once found inspiration.</p>
+            </div>
+        </div>
+
+        <!-- Itinerary Section -->
+        <div id="itinerary" class="section">
+            <h2>3-Day Paris Itinerary</h2>
+
+            <!-- Day 1 -->
+            <div class="itinerary-day">
+                <h3>Day 1: Arrival & Eiffel Tower</h3>
+                <p>Arrive in Paris and settle into your hotel. In the evening, take a sunset tour of the Eiffel Tower, followed by a Seine River cruise.</p>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="itinerary-day">
+                <h3>Day 2: Louvre & Notre-Dame</h3>
+                <p>Spend the day exploring the Louvre, followed by a visit to the historic Notre-Dame Cathedral. Enjoy dinner at a classic Parisian bistro.</p>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="itinerary-day">
+                <h3>Day 3: Montmartre & Sacré-Cœur</h3>
+                <p>On your final day, stroll through the artistic neighborhood of Montmartre, and visit the Sacré-Cœur Basilica for one last panoramic view of Paris.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
