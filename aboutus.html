@@ -1,37 +1,115 @@
-//text: About Escape Route
+<!doctype html>
+<html lang="en">
 
-At Escape Route, we believe that travel is a deeply personal experience, 
-and no two journeys should be the same. Founded with the vision of offering 
-bespoke travel services, we are a boutique agency that specializes in curating 
-one-of-a-kind adventures, designed to meet the specific desires, dreams, and 
-interests of each traveler. Whether you’re seeking a secluded island retreat, 
-an exhilarating adventure across rugged landscapes, or an immersive journey into 
-the heart of a new culture, we tailor every aspect of your trip to create memories 
-that last a lifetime.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Escape Route</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External stylesheet -->
+    <style>
+        body {
+            background-color: #dcd6ff;
+            margin: 0;
+            font-family: Calibri, sans-serif, Verdana;
+            overflow-x: hidden;
+        }
+        
+        #nav {
+            list-style-type: none;
+            font-size: 22px;
+            padding: 0;
+            position: fixed;
+            background-color: #ebebff;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        #nav li {
+            display: inline-block;
+        }
 
-Our team at Escape Route is passionate about crafting travel experiences that 
-go beyond the ordinary. We take the time to get to know you—your travel preferences, 
-your pace, your interests—so that we can create customized itineraries that are perfectly 
-suited to you. We pride ourselves on uncovering hidden gems, offering exclusive access to 
-destinations and experiences that only seasoned travelers know about. From remote, 
-tranquil beaches to vibrant, bustling cities, we ensure that your travel experience 
-is both seamless and personalized.
+        #nav a {
+            color: #6450d5;
+            padding: 15px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
 
-With Escape Route, no detail is overlooked. We offer end-to-end planning services, 
-taking care of everything from transportation and accommodation to dining recommendations 
-and unique local experiences. Whether you’re traveling solo, as a couple, with family, or 
-as part of a group, we cater to all types of travelers. We work with trusted partners 
-around the globe to provide unparalleled service and ensure that your trip exceeds 
-expectations.
+        #nav a:hover {
+            color: #f6f9cf;
+            background-color: #6450d5;
+        }
 
-At the heart of Escape Route is our belief in the transformative power of travel. 
-We don’t just book vacations; we create personalized escapes that allow you to step 
-outside the everyday and into a world of exploration, relaxation, and discovery. 
-Our goal is to remove the stress of travel planning, leaving you free to fully 
-immerse yourself in the experience.
+        #content {
+            margin-top: 80px; /* to avoid overlapping with fixed nav */
+            padding: 20px;
+            width: 80%;
+            margin: 20px auto;
+            background-color: #f6f9cf;
+            border-radius: 10px;
+        }
 
-Let Escape Route guide you to your next unforgettable journey. Whether you’re 
-dreaming of an adventure in the wild, a cultural deep dive, or a luxury escape, 
-we’re here to turn your vision into reality. No matter where your travels take you, 
-we’ll be with you every step of the way, ensuring that your journey is as unique as 
-you are.
+        footer {
+            background-color: #ebebff;
+            color: #6450d5;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="nav">
+        <li><a href='home.html'>Home</a></li>
+        <li><a href='get-involved.html'>Get Involved</a></li>
+        <li><a href='contact.html'>Contact</a></li>
+    </ul>
+
+    <div id="content">
+        <h1>About Escape Route</h1>
+        <p>At Escape Route, we believe that travel is a deeply personal experience, 
+        and no two journeys should be the same. Founded with the vision of offering 
+        bespoke travel services, we are a boutique agency that specializes in curating 
+        one-of-a-kind adventures, designed to meet the specific desires, dreams, and 
+        interests of each traveler. Whether you’re seeking a secluded island retreat, 
+        an exhilarating adventure across rugged landscapes, or an immersive journey into 
+        the heart of a new culture, we tailor every aspect of your trip to create memories 
+        that last a lifetime.</p>
+
+        <p>Our team at Escape Route is passionate about crafting travel experiences that 
+        go beyond the ordinary. We take the time to get to know you—your travel preferences, 
+        your pace, your interests—so that we can create customized itineraries that are perfectly 
+        suited to you. We pride ourselves on uncovering hidden gems, offering exclusive access to 
+        destinations and experiences that only seasoned travelers know about. From remote, 
+        tranquil beaches to vibrant, bustling cities, we ensure that your travel experience 
+        is both seamless and personalized.</p>
+
+        <p>With Escape Route, no detail is overlooked. We offer end-to-end planning services, 
+        taking care of everything from transportation and accommodation to dining recommendations 
+        and unique local experiences. Whether you’re traveling solo, as a couple, with family, or 
+        as part of a group, we cater to all types of travelers. We work with trusted partners 
+        around the globe to provide unparalleled service and ensure that your trip exceeds 
+        expectations.</p>
+
+        <p>At the heart of Escape Route is our belief in the transformative power of travel. 
+        We don’t just book vacations; we create personalized escapes that allow you to step 
+        outside the everyday and into a world of exploration, relaxation, and discovery. 
+        Our goal is to remove the stress of travel planning, leaving you free to fully 
+        immerse yourself in the experience.</p>
+
+        <p>Let Escape Route guide you to your next unforgettable journey. Whether you’re 
+        dreaming of an adventure in the wild, a cultural deep dive, or a luxury escape, 
+        we’re here to turn your vision into reality. No matter where your travels take you, 
+        we’ll be with you every step of the way, ensuring that your journey is as unique as 
+        you are.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Escape Route | Email: <a class="email-link" href="#">info@escaperoute.com</a></p>
+    </footer>
+</body>
+
+</html>
