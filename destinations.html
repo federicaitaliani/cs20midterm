@@ -1,30 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Travel Destinations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
+        #places-section {
+            text-align: center;
+            padding: 50px;
+            background-color: #fff;
+            margin: 20px auto;
+            max-width: 1200px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .places-text {
+            color: #333;
+        }
+
+        #places-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .places {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .places:hover {
+            transform: scale(1.05);
+        }
+
+        .places img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .places h3 {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .places p {
+            padding: 15px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .benefits {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .benefits {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
+<body>
 
-    <div id="benefits-section">
-        <h2 class="benefits-text">Where can we take you?</h2>
-        <p class="benefits-text">
+    <div id="places-section">
+        <h2 class="places-text">Where can we take you?</h2>
+        <p class="places-text">
             Click to explore what your dream trip to our top destinations, like Paris, New York, or London, could look like!
         </p>
-        <div id="benefits-container">
-            <div class="benefits">
+        <div id="places-container">
+            <div class="places">
                 <img src="newyorkCover.jpg" alt="New York" />
                 <h3>New York</h3>
                 <p>Experience the vibrant energy of New York City, where iconic skyscrapers meet world-class art and entertainment.</p>
             </div>
-            <div class="benefits">
-                <img src="anxious_cat.jpg" alt="Paris" />
+            <div class="places">
+                <img src="parisCover.jpg" alt="Paris" />
                 <h3>Paris</h3>
                 <p>Discover the romance and elegance of Paris, from the Eiffel Tower to charming sidewalk cafés.</p>
             </div>
-            <div class="benefits">
-                <img src="london1.jpg" alt="London" />
+            <div class="places">
+                <img src="londonCover.jpg" alt="London" />
                 <h3>London</h3>
                 <p>Uncover the rich history and modern allure of London, with its royal landmarks and bustling urban vibe.</p>
             </div>
         </div>
     </div>
+
+</body>
 </html>
