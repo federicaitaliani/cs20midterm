@@ -7,7 +7,198 @@
 
 <head>
     <title>Clothe The Cats</title>
-    <link rel="stylesheet" href="style.css"/>
+    <style type="text/css">
+        html, body {background-color: #dcd6ff;
+            margin: 0;
+            padding: 0;
+            font-family: Calibri, sans-serif, Verdana;
+            overflow-x: hidden;
+        }
+        
+        * {
+            box-sizing: border-box; 
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        ul#nav {
+            list-style-type: none;
+            font-size: 22px;
+            text-align: left;
+            width: 100%;
+            display: inline-block;
+            background-color: #ebebff;
+            margin: 0px;
+            top: 0;
+            padding: 0;
+            position: fixed
+        }
+        
+        ul#nav a {
+            color: #6450d5;
+            padding: 15px 0px;
+            width: 150px; text-align: center;
+            display: inline-block;
+        }
+        
+        ul#nav a:hover {
+            color: #f6f9cf;
+            background-color: #6450d5;
+        }
+        
+        ul#nav li {
+            display: inline-block
+        } 
+        
+        #nav {
+            z-index: 1000;
+        }
+        
+        .banner {
+            background-image: url("cozy-cat.jpg");
+            background-size: cover;
+            background-position: center top;
+            text-align: center;
+            height: 440px;
+            padding: 80px auto;
+            padding-top: 120px;
+            margin-top: 40px;
+        }
+        
+        .banner h2 {
+            font-size: 38px; 
+            margin: 0;
+            padding-bottom: 10px; 
+            color: #ebebff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+        }
+        
+        .banner p {
+            font-size: 60px;
+            color: #6450d5;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+            margin: 0; 
+        }
+        
+        #mission {
+            display: block;
+            padding: 50px 20px;
+            text-align: center;
+            width: 60%;
+            font-size: 22px;
+            background-color: #f6f9cf;
+            margin: 0 auto;
+            margin-top: 120px;
+            margin-bottom: 60px;
+            border-radius: 10px;
+        }
+        
+        #mission h1 {
+            font-size: 40px;
+        }
+        
+        #mission p {
+            margin-top: 0;
+            margin-bottom: 50px;
+            padding: 0 45px;
+        }
+        
+        #mission .button {
+            padding: 10px 20px;
+            background-color: #c3baf7;
+            color: #6450d5;;
+            border-radius: 5px;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 18px;
+            border: 2px solid #6450d5;
+        }
+        
+        #mission .button:hover {
+            color: #f6f9cf;
+            background-color: #6450d5;
+        }
+        
+        #benefits-section {
+            padding: 30px 20px; 
+            margin: 20px auto; 
+            border-radius: 10px; 
+        }
+        
+        #benefits-container {
+            display: flex;
+            justify-content: center; 
+            flex-wrap: wrap;
+            gap: 20px; 
+        }
+        
+        .benefits {
+            display: flex; 
+            flex-direction: column;
+            flex-basis: 18%;
+            background-color: #c3baf7;
+            border: 7px solid #f6f9cf;
+            border-radius: 10px; 
+            padding: 35px; 
+            text-align: center; 
+        }
+        
+        .benefits p {
+            text-align: center;
+            margin: 0;
+            padding-bottom: 30px; 
+            flex-grow: 1;
+            font-size: 15px;
+        }
+        
+        .benefits img {
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 10px; 
+        }
+        
+        #benefits-section h2 {
+            font-size: 28px;
+            margin-bottom: 10px; 
+        }
+        
+        .benefits h3 {
+            font-size: 20px;
+        }
+        
+        .benefits-text {
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        #signup {
+            background-color: #c3baf7;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            border: 7px solid #fbffc9;
+            margin: 80px auto;
+            margin-bottom: 120px;
+            width: 60%;
+        }
+        
+        #signup .form-element {
+            display: inline-block;
+        }
+        
+        footer {
+            background-color: #ebebff; 
+            color: #6450d5;
+            padding: 10px;
+            width: 100%; 
+        }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
