@@ -1,1 +1,151 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your New York Adventure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        #header {
+            background-color: #87CEEB;
+            padding: 30px;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        #main-content {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .text-content {
+            padding: 20px;
+        }
+
+        .text-content h2 {
+            color: #008b8b;
+        }
+
+        .text-content p {
+            line-height: 1.6;
+        }
+
+        #itinerary {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .itinerary-day {
+            flex: 1;
+            min-width: 280px;
+            padding: 15px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .itinerary-day h3 {
+            margin-bottom: 10px;
+            color: #008b8b;
+        }
+
+        .itinerary-day p {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .itinerary-day {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>Your Dream Trip to New York</h1>
+        <p>Explore the city that never sleeps, from its iconic landmarks to its vibrant neighborhoods, and experience the energy of New York City.</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        
+        <!-- First Section with Image and Description -->
+        <div class="section">
+            <img src="nycStatue.jpg" alt="Statue of Liberty">
+            <div class="text-content">
+                <h2>Statue of Liberty</h2>
+                <p>Begin your New York adventure with a visit to the iconic Statue of Liberty. Learn about the history of this symbol of freedom and enjoy the stunning views of the Manhattan skyline from Liberty Island.</p>
+            </div>
+        </div>
+
+        <!-- Second Section with Image and Description -->
+        <div class="section">
+            <img src="timesSquare.jpg" alt="Times Square">
+            <div class="text-content">
+                <h2>Times Square</h2>
+                <p>Step into the heart of Manhattan and experience the bright lights and bustling energy of Times Square, a must-see destination that truly captures the spirit of New York City.</p>
+            </div>
+        </div>
+
+        <!-- Third Section with Image and Description -->
+        <div class="section">
+            <img src="centralPark.jpg" alt="Central Park">
+            <div class="text-content">
+                <h2>Central Park</h2>
+                <p>Take a break from the urban hustle and unwind in the natural beauty of Central Park. Whether you stroll through its scenic paths or visit landmarks like Bethesda Terrace, this green oasis offers a peaceful retreat in the middle of the city.</p>
+            </div>
+        </div>
+
+        <!-- Itinerary Section -->
+        <div id="itinerary" class="section">
+            <h2>3-Day New York Itinerary</h2>
+
+            <!-- Day 1 -->
+            <div class="itinerary-day">
+                <h3>Day 1: Statue of Liberty & Ellis Island</h3>
+                <p>Kick off your trip with a ferry ride to the Statue of Liberty, followed by a visit to Ellis Island, where you can explore the Immigration Museum. End the day with a dinner in Lower Manhattan.</p>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="itinerary-day">
+                <h3>Day 2: Times Square & Broadway</h3>
+                <p>Spend the day in Midtown, starting with a visit to Times Square. Explore nearby attractions like Rockefeller Center, and in the evening, catch a Broadway show.</p>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="itinerary-day">
+                <h3>Day 3: Central Park & Museum Mile</h3>
+                <p>Enjoy a peaceful morning in Central Park, followed by a visit to Museum Mile, home to famous museums like The Met and the Guggenheim. Conclude your trip with a walk down Fifth Avenue.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
