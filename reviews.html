@@ -1,73 +1,151 @@
-<link rel="stylesheet" href="style.css"> 
-1. Sarah M. – New York, NY
-"I’ve never had a travel experience quite like the one I had with Escape Route. 
-From the moment I reached out, they understood exactly what I was looking for—complete 
-relaxation in a remote, beautiful location. They found me the perfect eco-lodge in Costa 
-Rica where I could disconnect and recharge. Every detail, from transportation to 
-activities, was taken care of flawlessly. I’m already planning my next adventure with 
-them!"
+<!doctype html>
+<html>
 
-2. David L. – London, UK
-"Escape Route turned our honeymoon into a dream come true. We wanted something off 
-the beaten path, but with all the luxury we could imagine. They arranged a private 
-villa on a secluded beach in Bali, complete with personalized tours and candlelit 
-dinners. The team went above and beyond to make sure everything was perfect. Highly 
-recommend them for any special occasion!"
+<head>
+    <title>Reviews - Escape Route</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+    <style type="text/css">
+        html, body {
+            background-color: #C1E2EF;
+            margin: 0;
+            padding: 0;
+            font-family: Calibri, sans-serif, Verdana;
+            overflow-x: hidden;
+        }
 
-3. Maria G. – San Francisco, CA
-"As a family of five, it can be challenging to find a trip that works for everyone, 
-but Escape Route made it happen! They planned an incredible adventure through Italy, 
-combining kid-friendly activities with some much-needed relaxation for my husband and me. 
-The itinerary was spot on, and we didn’t have to worry about a thing. I can’t wait to use 
-their services for our next family trip!"
+        ul#nav {
+            list-style-type: none;
+            font-size: 22px;
+            text-align: left;
+            width: 100%;
+            display: inline-block;
+            background-color: #ebebff;
+            margin: 0px;
+            top: 0;
+            padding: 0;
+            position: fixed;
+        }
 
-4. Jonathan H. – Vancouver, Canada
-"I’ve always loved traveling, but planning everything myself used to be so 
-stressful—until I found Escape Route. They’ve organized two trips for me now, 
-and both were absolutely amazing. My latest trip was a wellness retreat in Thailand, 
-complete with yoga, meditation, and spa treatments in a stunning setting. Escape Route 
-really understands how to make a trip feel like a personal escape. Five stars all 
-the way!"
+        ul#nav a {
+            color: #6450d5;
+            padding: 15px 0px;
+            width: 150px; 
+            text-align: center;
+            display: inline-block;
+        }
 
-5. Emily P. – Sydney, Australia
-"Escape Route’s cultural immersion program was exactly what I was looking for. 
-I wanted to explore Japan beyond the typical tourist spots, and they arranged the 
-most incredible experiences—from learning traditional tea ceremonies with a local 
-family to visiting hidden temples. The attention to detail was impeccable, and I 
-felt like I truly connected with the culture. I’ll definitely be back for more 
-adventures with them!"
+        ul#nav a:hover {
+            color: #f6f9cf;
+            background-color: #6450d5;
+        }
 
-6. Mike T. – Austin, TX
-"I recently used Escape Route for a corporate retreat, and I can’t speak highly 
-enough of their services. They arranged everything from the venue to team-building 
-activities in a beautiful mountain resort. My team had an incredible time bonding 
-while hiking and participating in creative workshops. It was a perfect blend of 
-productivity and relaxation, all thanks to Escape Route’s meticulous planning."
+        ul#nav li {
+            display: inline-block;
+        }
 
-7. Olivia R. – Paris, France
-"My experience with Escape Route was beyond my expectations. I wanted to celebrate 
-my 30th birthday with friends in style, and they helped me organize an unforgettable 
-trip to the Amalfi Coast. From a private yacht to gourmet dining experiences, everything 
-was luxurious yet personal. The best part? I didn’t have to worry about a single detail. 
-I’ll never travel without them again!"
+        #reviews {
+            padding: 50px 20px;
+            text-align: center;
+            width: 80%;
+            margin: 100px auto;
+            border-radius: 10px;
+            background-color: #f6f9cf;
+        }
 
-8. Jack K. – Miami, FL
-"If you want adventure, Escape Route is the way to go! I’m an avid hiker, and they 
-planned a week-long trek through Patagonia for me that was the perfect balance of 
-challenge and beauty. The local guides they connected me with were incredibly 
-knowledgeable, and the accommodations were surprisingly comfortable for such a remote 
-location. I’ll definitely be booking my next adventure with them soon!"
+        .review-block {
+            background-color: #c3baf7;
+            border: 2px solid #6450d5;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
 
-9. Lucy B. – Toronto, Canada
-"Escape Route took care of every detail of our luxury Mediterranean cruise. From the 
-moment we set sail, everything was organized perfectly, from private excursions to 
-gourmet meals. It was the most stress-free, pampered vacation I’ve ever had, and I 
-can’t thank the team enough for making it such a memorable experience. I highly 
-recommend their services!"
+        .reviewer {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 
-10. Carlos A. – Barcelona, Spain
-"As someone who loves food and wine, I was blown away by the culinary tour Escape 
-Route created for me in France. I got to meet local chefs, visit beautiful vineyards, 
-and experience Michelin-starred restaurants. The personalized attention to my tastes 
-made all the difference. I’ve traveled with many agencies before, but none have come 
-close to the exceptional service and creativity of Escape Route!"
+        footer {
+            background-color: #ebebff; 
+            color: #6450d5;
+            padding: 10px;
+            width: 100%; 
+            text-align: center;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <ul id="nav">
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='get-involved.html'>Get Involved</a></li>
+        <li><a href='contactus.html'>Contact</a></li>
+        <li><a href='aboutus.html'>About Us</a></li>
+        <li><a href='reviews.html'>Reviews</a></li> <!-- Link to Reviews Page -->
+    </ul>
+
+    <div id="reviews">
+        <h1>What Our Clients Say</h1>
+
+        <div class="review-block">
+            <p class="reviewer">1. Sarah M. – New York, NY</p>
+            <p>"I’ve never had a travel experience quite like the one I had with Escape Route. From the moment I reached out, they understood exactly what I was looking for—complete relaxation in a remote, beautiful location. They found me the perfect eco-lodge in Costa Rica where I could disconnect and recharge. Every detail, from transportation to activities, was taken care of flawlessly. I’m already planning my next adventure with them!"</p>
+        </div>
+
+        <div class="review-block">
+            <p class="reviewer">2. David L. – London, UK</p>
+            <p>"Escape Route turned our honeymoon into a dream come true. We wanted something off the beaten path, but with all the luxury we could imagine. They arranged a private villa on a secluded beach in Bali, complete with personalized tours and candlelit dinners. The team went above and beyond to make sure everything was perfect. Highly recommend them for any special occasion!"</p>
+        </div>
+
+        <div class="review-block">
+            <p class="reviewer">3. Maria G. – San Francisco, CA</p>
+            <p>"As a family of five, it can be challenging to find a trip that works for everyone, but Escape Route made it happen! They planned an incredible adventure through Italy, combining kid-friendly activities with some much-needed relaxation for my husband and me. The itinerary was spot on, and we didn’t have to worry about a thing. I can’t wait to use their services for our next family trip!"</p>
+        </div>
+
+        <div class="review-block">
+            <p class="reviewer">4. Jonathan H. – Vancouver, Canada</p>
+            <p>"I’ve always loved traveling, but planning everything myself used to be so stressful—until I found Escape Route. They’ve organized two trips for me now, and both were absolutely amazing. My latest trip was a wellness retreat in Thailand, complete with yoga, meditation, and spa treatments in a stunning setting. Escape Route really understands how to make a trip feel like a personal escape. Five stars all the way!"</p>
+        </div>
+
+        <div class="review-block">
+            <p class="reviewer">5. Emily P. – Sydney, Australia</p>
+            <p>"Escape Route’s cultural immersion program was exactly what I was looking for. I wanted to explore Japan beyond the typical tourist spots, and they arranged the most incredible experiences—from learning traditional tea ceremonies with a local family to visiting hidden temples. The attention to detail was impeccable, and I felt like I truly connected with the culture. I’ll definitely be back for more adventures with them!"</p>
+        </div>
+
+        <div class="review-block">
+            <p class="reviewer">6. Mike T. – Austin, TX</p>
+            <p>"I recently used Escape Route for a corporate retreat, and I can’t speak highly enough of their services. They arranged everything from the venue to team-building activities in a beautiful mountain resort. My team had an incredible time bonding while hiking and participating in creative workshops. It was a perfect blend of productivity and relaxation, all thanks to Escape Route’s meticulous planning."</p>
+        </div>
+
+        <div class="review-block">
+            <p class="reviewer">7. Olivia R. – Paris, France</p>
+            <p>"My experience with Escape Route was beyond my expectations. I wanted to celebrate my 30th birthday with friends in style, and they helped me organize an unforgettable trip to the Amalfi Coast. From a private yacht to gourmet dining experiences, everything was luxurious yet personal. The best part? I didn’t have to worry about a single detail. I’ll never travel without them again!"</p>
+        </div>
+
+        <div class="review-block">
+            <p class="reviewer">8. Jack K. – Miami, FL</p>
+            <p>"If you want adventure, Escape Route is the way to go! I’m an avid hiker, and they planned a week-long trek through Patagonia for me that was the perfect balance of challenge and beauty. The local guides they connected me with were incredibly knowledgeable, and the accommodations were surprisingly comfortable for such a remote location. I’ll definitely be booking my next adventure with them soon!"</p>
+        </div>
+
+        <div class="review-block">
+            <p class="reviewer">9. Lucy B. – Toronto, Canada</p>
+            <p>"Escape Route took care of every detail of our luxury Mediterranean cruise. From the moment we set sail, everything was organized perfectly, from private excursions to gourmet meals. It was the most stress-free, pampered vacation I’ve ever had, and I can’t thank the team enough for making it such a memorable experience. I highly recommend their services!"</p>
+        </div>
+
+        <div class="review-block">
+            <p class="reviewer">10. Carlos A. – Barcelona, Spain</p>
+            <p>"As someone who loves food and wine, I was blown away by the culinary tour Escape Route created for me in France. I got to meet local chefs, visit beautiful vineyards, and experience Michelin-starred restaurants. The personalized attention to my tastes made all the difference. I’ve traveled with many agencies before, but none have come close to the exceptional service and creativity of Escape Route!"</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Escape Route &copy; 2024 | Email: <a class="email-link" href="#">info@escaperoute.org</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
