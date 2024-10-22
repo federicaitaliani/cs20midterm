@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your London Adventure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
 
+        #header {
+            background-color: #b0c4de;
+            padding: 30px;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        #main-content {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .text-content {
+            padding: 20px;
+        }
+
+        .text-content h2 {
+            color: #6a5acd;
+        }
+
+        .text-content p {
+            line-height: 1.6;
+        }
+
+        #itinerary {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .itinerary-day {
+            flex: 1;
+            min-width: 280px;
+            padding: 15px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .itinerary-day h3 {
+            margin-bottom: 10px;
+            color: #6a5acd;
+        }
+
+        .itinerary-day p {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .itinerary-day {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>Your Dream Trip to London</h1>
+        <p>Explore the rich history and modern allure of London, from royal landmarks to world-class museums and vibrant neighborhoods.</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        
+        <!-- First Section with Image and Description -->
+        <div class="section">
+            <img src="londonTower.jpg" alt="Tower of London">
+            <div class="text-content">
+                <h2>Tower of London</h2>
+                <p>Begin your London adventure with a visit to the historic Tower of London. Explore its fascinating history, the Crown Jewels, and the iconic Beefeaters guarding this royal fortress.</p>
+            </div>
+        </div>
+
+        <!-- Second Section with Image and Description -->
+        <div class="section">
+            <img src="bigBen.jpg" alt="Big Ben">
+            <div class="text-content">
+                <h2>Big Ben & Houses of Parliament</h2>
+                <p>Stand in awe of Big Ben and the magnificent Houses of Parliament, symbols of London’s enduring political and architectural legacy. Don’t miss a walk along the Thames for fantastic views of this iconic landmark.</p>
+            </div>
+        </div>
+
+        <!-- Third Section with Image and Description -->
+        <div class="section">
+            <img src="londonEye.jpg" alt="London Eye">
+            <div class="text-content">
+                <h2>London Eye</h2>
+                <p>Take a spin on the London Eye and enjoy breathtaking panoramic views of the city’s skyline, from the Thames to landmarks like St. Paul’s Cathedral and the Shard.</p>
+            </div>
+        </div>
+
+        <!-- Itinerary Section -->
+        <div id="itinerary" class="section">
+            <h2>3-Day London Itinerary</h2>
+
+            <!-- Day 1 -->
+            <div class="itinerary-day">
+                <h3>Day 1: Tower of London & Tower Bridge</h3>
+                <p>Start your trip with a visit to the Tower of London, then cross the iconic Tower Bridge for stunning views of the city. Enjoy dinner in the historic Borough Market area.</p>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="itinerary-day">
+                <h3>Day 2: Big Ben & Westminster Abbey</h3>
+                <p>Spend your second day exploring Westminster, including Big Ben, the Houses of Parliament, and a tour of the majestic Westminster Abbey. In the evening, walk along the South Bank and enjoy a river cruise.</p>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="itinerary-day">
+                <h3>Day 3: London Eye & Covent Garden</h3>
+                <p>Take a ride on the London Eye for a bird's-eye view of the city, followed by a visit to Covent Garden for shopping, street performances, and a vibrant atmosphere to end your trip.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
