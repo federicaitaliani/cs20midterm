@@ -1,88 +1,273 @@
-<link rel="stylesheet" href="style.css">
-1. Custom Travel Itineraries
-Details: We specialize in crafting fully personalized itineraries based on your 
-preferences, travel style, and interests. Whether you’re looking for adventure, 
-relaxation, or cultural immersion, we build your journey from scratch, selecting 
-destinations, activities, accommodations, and dining experiences that are tailored to you.
+<!doctype html>
+<html>
 
-2. Exclusive Accommodation Bookings
-Details: At Escape Route, we have access to a global network of unique and 
-luxurious accommodations, from boutique hotels and private villas to eco-lodges 
-and charming bed-and-breakfasts. We hand-pick every location to ensure it fits your 
-vision of the perfect getaway.
+<head>
+    <title>Escape Route</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        html, body {background-color: #e0f6f2;
+            margin: 0;
+            padding: 0;
+            font-family: Calibri, sans-serif, Verdana;
+            overflow-x: hidden;
+        }
 
-3. Private Tours & Experiences
-Details: Gain insider access to some of the world’s most sought-after destinations 
-and experiences. We arrange private, guided tours that immerse you in local culture, 
-history, and landscapes. From private city tours and cooking classes with local chefs 
-to off-the-beaten-path excursions, we ensure every experience is enriching and exclusive.
+        * {
+            box-sizing: border-box; 
+        }
 
-4. Luxury Transportation Services
-Details: Travel in comfort and style with our luxury transportation options. 
-Whether you need private transfers, first-class flights, or a chauffeured car 
-service, we ensure seamless, stress-free travel from your doorstep to your destination. 
-Our partners offer everything from luxury sedans to helicopters for scenic transfers.
+        a {
+            text-decoration: none;
+        }
 
-5. Destination Weddings & Honeymoons
-Details: Celebrate life’s most memorable moments in an unforgettable setting. We plan 
-destination weddings and honeymoons that are completely tailored to your vision, managing 
-everything from venue selection to guest accommodations and special events, ensuring every 
-detail is picture-perfect.
+.email-link:hover {
+    text-decoration: underline;
+}
+        ul#nav {
+            list-style-type: none;
+            font-size: 22px;
+            text-align: left;
+            width: 100%;
+            display: inline-block;
+            background-color: #ebfcff;
+            margin: 0px;
+            top: 0;
+            padding: 0;
+            position: fixed
+        }
+        
+        ul#nav a {
+            color: #18b5b2;
+            padding: 15px 0px;
+            width: 150px; text-align: center;
+            display: inline-block;
+        }
+        
+        ul#nav a:hover {
+            color: #f4d7c8;
+            background-color: #18b5b2;
+        }
+        
+        ul#nav li {
+            display: inline-block
+        } 
+        
+        #nav {
+            z-index: 1000;
+        }
+        
+        .services-banner {
+            background-image: url("mainback.jpg");
+            background-size: cover;
+            background-position: center top;
+            text-align: center;
+            height: 620px;
+            padding: 80px auto;
+            padding-top: 120px;
+            margin: 40px 0 100px 0;
+        }
 
-6. Adventure Travel & Outdoor Excursions
-Details: For the thrill-seekers, we offer adventure-packed trips that include everything 
-from hiking and mountain climbing to diving, safaris, and zip-lining. We partner with 
-certified guides and experts to ensure your adventure is both safe and exhilarating, 
-offering experiences that take you beyond the tourist trail.
+        .services-banner p {
+            font-size: 45px;
+            color: #18b5b2;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+            margin: 0 15%; 
+        }
 
-7. Cultural Immersion Programs
-Details: Dive deep into the local culture with authentic, immersive experiences such 
-as attending festivals, engaging in local artisan workshops, or staying with local 
-families. We create opportunities for you to truly connect with the essence of a place, 
-making your journey more meaningful and memorable.
+        .button {
+            margin: 30px;
+            padding: 10px 20px;
+            background-color: #a9e4d9; 
+            color: #18b5b2;;
+            border-radius: 5px;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 22px;
+            border: 2px solid #18b5b2;
+        }
 
-8. Wellness Retreats
-Details: Recharge your mind, body, and spirit with customized wellness retreats. 
-Whether you're seeking yoga retreats, meditation sanctuaries, spa escapes, or detox 
-programs, we curate wellness-focused journeys that help you find balance and rejuvenation
-in the most serene locations around the world.
+        .button:hover {
+            color: #f4d7c8;
+            background-color: #18b5b2;
+        }
 
-9. Family Travel Planning
-Details: We take the stress out of family vacations by creating multi-generational 
-itineraries that cater to everyone’s needs. From kid-friendly activities to seamless 
-transportation and family-friendly accommodations, we ensure that every member of the 
-family has a great experience.
+        .services {
+            margin: 40px auto; 
+            max-width: 1200px;
+        }
 
-10. Event Planning & Special Celebrations
-Details: Whether you’re planning a milestone birthday, a surprise engagement, or a 
-family reunion, we can help you create a memorable celebration in any destination. 
-From intimate gatherings to large events, we take care of all logistics, ensuring a 
-flawless event in an exceptional setting.
+        .service-item {
+            position: relative;
+            margin-bottom: 50px;
+        }
 
-11. 24/7 Concierge & Support
-Details: We provide round-the-clock concierge services to assist you during your 
-travels. Whether you need last-minute reservations, transportation adjustments, or 
-insider tips on local hotspots, our team is available to help, ensuring your trip goes 
-smoothly from start to finish.
+        .service-item img {
+            width: 450px; 
+            height: auto;
+            margin-right: 140px; 
+        }
 
-12. Sustainable Travel Planning
-Details: For the eco-conscious traveler, we offer sustainable travel options that 
-include eco-friendly accommodations, low-impact activities, and carbon-offset programs. 
-We help you minimize your environmental footprint while still enjoying an unforgettable 
-adventure.
+        .services-text {
+            display: inline-block;
+            position: absolute;
+            vertical-align: center; 
+            width: 45%;
+            font-size: 18px;
+            margin-top: 3%;
+        }
 
-13. Luxury Cruise Experiences
-Details: Escape on a luxury cruise tailored to your interests, whether you dream of 
-exploring the Mediterranean, Caribbean, or the Arctic. We hand-pick the best cruise 
-lines that offer premium accommodations, gourmet dining, and exclusive shore excursions.
+        .services-text h2 {
+            color: #18b5b2;
+        }
 
-14. Corporate Travel & Team-Building Retreats
-Details: We organize corporate retreats and team-building experiences that blend 
-work and leisure. From beachfront resorts to secluded mountain lodges, we help companies 
-create rewarding and productive travel experiences for their teams.
+        .separator {
+            height: 2px; 
+            background-color: #f4d7c8; 
+            margin: 50px 0; 
+        }
 
-15. Personalized Food & Wine Tours
-Details: Indulge in the world’s finest cuisines and wines with our customized culinary 
-tours. Visit renowned vineyards, dine at Michelin-starred restaurants, or take part in 
-private tastings with local chefs and winemakers. Perfect for foodies and wine 
-enthusiasts seeking an extraordinary gastronomic experience.
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <ul id="nav">
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='aboutus.html'>About Us</a></li>
+        <li><a href='services.html'>Services</a></li>
+        <li><a href='destinations.html'>Destinations</a></li>
+        <li><a href='reviews.html'>Reviews</a></li>
+        <li><a href='contactus.html'>Contact</a></li>
+    </ul>
+
+    <div class="services-banner">
+        <p>Discover a world crafted just for you with our exclusive, tailored travel services.</p>
+        <a href="#" class="button">Book Now</a>
+    </div>
+
+    <div class="services">
+        <div class="service-item">
+            <img src="mainback.jpg" />
+            <div class="services-text">
+                <h2>Custom Travel Itineraries</h2>
+                <p>
+                    We specialize in crafting fully personalized itineraries based on your
+                    preferences, travel style, and interests. Whether you’re looking for adventure,
+                    relaxation, or cultural immersion, we build your journey from scratch, selecting
+                    destinations, activities, accommodations, and dining experiences that are tailored to you.
+                </p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <img src="mainback.jpg" />
+            <div class="services-text">
+                <h2>Exclusive Accommodation Bookings</h2>
+                <p>
+                    We have access to a global network of unique and
+                    luxurious accommodations, from boutique hotels and private villas to eco-lodges
+                    and charming bed-and-breakfasts. We hand-pick every location to ensure it fits your
+                    vision of the perfect getaway.
+                </p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <img src="mainback.jpg" />
+            <div class="services-text">
+                <h2>Private Tours & Experiences</h2>
+                <p>
+                    Gain insider access to some of the world’s most sought-after destinations
+                    and experiences. We arrange private, guided tours that immerse you in local culture,
+                    history, and landscapes. From private city tours and cooking classes with local chefs
+                    to off-the-beaten-path excursions, we ensure every experience is enriching and exclusive.
+                </p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <img src="mainback.jpg" />
+            <div class="services-text">
+                <h2>Luxury Transportation Services</h2>
+                <p>
+                    Travel in comfort and style with our luxury transportation options.
+                    Whether you need private transfers, first-class flights, or a chauffeured car 
+                    service, we ensure seamless, stress-free travel from your doorstep to your destination. 
+                    Our partners offer everything from luxury sedans to helicopters for scenic transfers.
+                </p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <img src="mainback.jpg" />
+            <div class="services-text">
+                <h2>Destination Weddings & Honeymoons</h2>
+                <p>
+                    Celebrate life’s most memorable moments in an unforgettable setting. We plan
+                    destination weddings and honeymoons that are completely tailored to your vision,
+                    managing everything from venue selection to guest accommodations and special events, 
+                    ensuring every detail is picture-perfect.
+                </p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <img src="mainback.jpg" />
+            <div class="services-text">
+                <h2>Adventure Travel & Outdoor Excursions</h2>
+                <p>
+                    For the thrill-seekers, we offer adventure-packed trips that include everything 
+                    from hiking and mountain climbing to diving, safaris, and zip-lining. We partner with 
+                    certified guides and experts to ensure your adventure is both safe and exhilarating, 
+                    offering experiences that take you beyond the tourist trail.
+                </p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <img src="mainback.jpg" />
+            <div class="services-text">
+                <h2>Event Planning & Special Celebrations</h2>
+                <p>
+                    Whether you’re planning a milestone birthday, a surprise engagement, or a 
+                    family reunion, we can help you create a memorable celebration in any destination. 
+                    From intimate gatherings to large events, we take care of all logistics, ensuring a 
+                    flawless event in an exceptional setting.
+                </p>
+            </div>
+        </div>
+        
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <img src="mainback.jpg" />
+            <div class="services-text">
+                <h2>Luxury Cruise Experiences</h2>
+                <p>
+                    Escape on a luxury cruise tailored to your interests, whether you dream of 
+                    exploring the Mediterranean, Caribbean, or the Arctic. We hand-pick the best cruise 
+                    lines that offer premium accommodations, gourmet dining, and exclusive shore excursions.
+                </p>
+            </div>
+        </div>
+
+    </div>   
+
+</body>
+</html>
