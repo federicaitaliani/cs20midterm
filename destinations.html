@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Travel Destinations</title>
     <style>
@@ -40,6 +41,8 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
             overflow: hidden;
+            text-decoration: none;
+            color: inherit;
         }
 
         .places:hover {
@@ -64,13 +67,13 @@
         }
 
         @media (max-width: 768px) {
-            .benefits {
+            .places {
                 width: 45%;
             }
         }
 
         @media (max-width: 500px) {
-            .benefits {
+            .places {
                 width: 90%;
             }
         }
@@ -84,21 +87,21 @@
             Click to explore what your dream trip to our top destinations, like Paris, New York, or London, could look like!
         </p>
         <div id="places-container">
-            <div class="places">
+            <a href="newyork.html" class="places">
                 <img src="newyorkCover.jpg" alt="New York" />
                 <h3>New York</h3>
                 <p>Experience the vibrant energy of New York City, where iconic skyscrapers meet world-class art and entertainment.</p>
-            </div>
-            <div class="places">
+            </a>
+            <a href="paris.html" class="places">
                 <img src="parisCover.jpg" alt="Paris" />
                 <h3>Paris</h3>
                 <p>Discover the romance and elegance of Paris, from the Eiffel Tower to charming sidewalk cafés.</p>
-            </div>
-            <div class="places">
+            </a>
+            <a href="london.html" class="places">
                 <img src="london1.jpg" alt="London" />
                 <h3>London</h3>
                 <p>Uncover the rich history and modern allure of London, with its royal landmarks and bustling urban vibe.</p>
-            </div>
+            </a>
         </div>
     </div>
 
