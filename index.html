@@ -4,6 +4,7 @@
 <head>
     <title>Escape Route</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <style type="text/css">
         .banner {
             background-image: url("mainback.jpg");
@@ -24,6 +25,7 @@
         }
         
         .banner h2 {
+            display: none;
             font-size: 50px;
             color: #18b5b2;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
@@ -186,7 +188,15 @@
             Escape Route &copy; 2024 | Email: <a class="email-link" href="#">info@escaperoute.org</a>
         </p>
     </footer>
+
+    <script>
+        $(document).ready(function() {
+            // Fade in h1 first, then h2
+            $(".banner h1").hide().fadeIn(1000, function() {
+                $(".banner h2").hide().fadeIn(500);
+            });
+        });
+    </script>
     
 </body>
-
 </html>
