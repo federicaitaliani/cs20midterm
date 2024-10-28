@@ -16,6 +16,7 @@
             box-sizing: border-box;
         }
 
+        /* Top Navigation Bar */
         ul#nav {
             list-style-type: none;
             font-size: 22px;
@@ -26,14 +27,23 @@
             margin: 0;
             padding: 0;
             position: fixed;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 1000;
+        }
+
+        ul#nav li {
+            display: inline-block;
         }
 
         ul#nav a {
             color: #6450d5;
-            padding: 15px 0px;
-            width: 150px;
+            padding: 15px 20px;
+            width: auto;
             text-align: center;
             display: inline-block;
+            text-decoration: none;
         }
 
         ul#nav a:hover {
@@ -41,17 +51,10 @@
             background-color: #6450d5;
         }
 
-        ul#nav li {
-            display: inline-block;
-        }
-
-        #nav {
-            z-index: 1000;
-        }
-
+        /* Contact Form Styling */
         .contact-container {
             max-width: 600px;
-            margin: 80px auto 40px;
+            margin: 100px auto 40px;
             padding: 40px;
             background-color: #ebeef8;
             border-radius: 10px;
@@ -110,48 +113,22 @@
             background-color: #3e2d99;
             color: #f6f9cf;
         }
-
-        footer {
-            background-color: #ebebff;
-            color: #6450d5;
-            padding: 10px;
-            width: 100%;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-        }
-
-        footer a {
-            color: #6450d5;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        footer ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        footer ul li {
-            display: inline;
-            margin: 0 10px;
-        }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+    <!-- Top Navigation Bar -->
     <ul id="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="services.html">Services</a></li>
     </ul>
 
+    <!-- Contact Us Form -->
     <div class="contact-container">
         <p>Contact us!</p>
         <form action="#" method="POST">
@@ -165,20 +142,6 @@
         </form>
         <p>You can also reach us at +1 (123) 456 7980</p>
     </div>
-
-    <footer>
-        <p>Escape Route &copy; 2024 | Email: <a href="mailto:info@escaperoute.com">info@escaperoute.com</a></p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contactus.html">Contact</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="services.html">Services</a></li>
-            </ul>
-        </nav>
-    </footer>
 </body>
 
 </html>
