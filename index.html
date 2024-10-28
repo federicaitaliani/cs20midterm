@@ -13,7 +13,7 @@
         }
         
         * {
-            box-sizing: border-box;
+            box-sizing: border-box; 
         }
         
         a {
@@ -31,7 +31,7 @@
             width: 100%;
             display: inline-block;
             background-color: #ebebff;
-            margin: 0px;
+            margin: 0;
             top: 0;
             padding: 0;
             position: fixed;
@@ -52,7 +52,7 @@
         
         ul#nav li {
             display: inline-block;
-        } 
+        }
         
         #nav {
             z-index: 1000;
@@ -106,20 +106,23 @@
             padding: 0 45px;
         }
         
-        #mission .button {
+        .button {
             padding: 10px 20px;
-            background-color: #c3baf7;
-            color: #6450d5;
+            background-color: #6450d5;
+            color: #f6f9cf;
             border-radius: 5px;
             display: inline-block;
             text-transform: uppercase;
             font-size: 18px;
-            border: 2px solid #6450d5;
+            border: none;
+            margin-top: 15px;
+            width: 90%;
+            text-align: center;
         }
         
-        #mission .button:hover {
+        .button:hover {
+            background-color: #3e2d99;
             color: #f6f9cf;
-            background-color: #6450d5;
         }
         
         #benefits-section {
@@ -139,37 +142,27 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            flex-basis: 22%;
+            width: 240px;
             border-radius: 10px;
-            padding: 10px;
             text-align: center;
+            background-color: #ebebff;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
         
         .benefits img {
             width: 100%;
-            height: auto;
-            max-height: 300px; /* Adjust height */
+            height: 160px;
+            object-fit: cover;
             border-radius: 10px;
-            margin-bottom: 10px;
         }
         
-        .benefits .button {
-            padding: 10px 20px;
-            background-color: #6450d5;
-            color: #f6f9cf;
-            border-radius: 5px;
-            font-size: 18px;
-            text-transform: uppercase;
-            margin-top: 10px;
-            width: 80%; /* Ensures button is centered */
-            text-align: center;
+        .button-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
-        
-        .benefits .button:hover {
-            background-color: #c3baf7;
-            color: #6450d5;
-        }
-        
+
         #signup {
             background-color: #c3baf7;
             padding: 20px;
@@ -186,6 +179,7 @@
             color: #6450d5;
             padding: 10px;
             width: 100%;
+            text-align: center;
         }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -218,20 +212,28 @@
     <div id="benefits-section">
         <div id="benefits-container"> 
             <div class="benefits">
-                <img src="paradise.jpg" alt="Services Image"/>
-                <a href="services.html" class="button">Services</a>
+                <img src="paradise.jpg" />
+                <div class="button-container">
+                    <a href="services.html" class="button">Services</a>
+                </div>
             </div>
             <div class="benefits">
-                <img src="reviewsnubes.jpg" alt="Reviews Image"/>
-                <a href="reviews.html" class="button">Reviews</a>
+                <img src="reviewsnubes.jpg"/>
+                <div class="button-container">
+                    <a href="reviews.html" class="button">Reviews</a>
+                </div>
             </div>
             <div class="benefits">
-                <img src="destinationscan.jpg" alt="Destinations Image"/>
-                <a href="destinations.html" class="button">Destination</a>
+                <img src="destinationscan.jpg" />
+                <div class="button-container">
+                    <a href="destinations.html" class="button">Destinations</a>
+                </div>
             </div>
             <div class="benefits">
-                <img src="contactUs.jpg" alt="Contact Us Image"/>
-                <a href="contactus.html" class="button">Contact Us</a>
+                <img src="contactUs.jpg" alt="Cat in Cold Climate" />
+                <div class="button-container">
+                    <a href="contactus.html" class="button">Contact Us</a>
+                </div>
             </div>
         </div>
     </div>
@@ -242,9 +244,9 @@
         <form method="get" action="#">
             <div class="form-element">
                 <label>Email:</label>
-                <input type="text" name="Email"/>
+                <input type="text" name="Email" />
             </div>
-            <input type="submit" value="Sign Up">
+            <input type="submit" value="Sign Up" class="button">
         </form>
     </div>
 
@@ -253,7 +255,7 @@
             Clothe The Cats &copy; 2024 | Email: <a class="email-link" href="#">info@clothethecats.org</a>
         </p>
     </footer>
+    
 </body>
 
 </html>
-
