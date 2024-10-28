@@ -15,9 +15,8 @@
         * {
             box-sizing: border-box;
         }
-
-        /* Top Navigation Bar */
-        ul#nav {
+     
+  ul#nav {
             list-style-type: none;
             font-size: 22px;
             text-align: left;
@@ -25,32 +24,32 @@
             display: inline-block;
             background-color: #ebebff;
             margin: 0;
+            top: 0;
             padding: 0;
             position: fixed;
-            top: 0;
-            left: 0;
-            overflow: hidden;
-            z-index: 1000;
         }
-
-        ul#nav li {
-            display: inline-block;
-        }
-
+        
         ul#nav a {
             color: #6450d5;
-            padding: 15px 20px;
-            width: auto;
+            padding: 15px 0px;
+            width: 150px;
             text-align: center;
             display: inline-block;
-            text-decoration: none;
         }
-
+        
         ul#nav a:hover {
             color: #f6f9cf;
             background-color: #6450d5;
         }
-
+        
+        ul#nav li {
+            display: inline-block;
+        }
+        
+        #nav {
+            z-index: 1000;
+        }
+        
         /* Contact Form Styling */
         .contact-container {
             max-width: 600px;
