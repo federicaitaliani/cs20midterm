@@ -49,3 +49,10 @@ ul#nav li {
 #nav {
     z-index: 1000;
 }
+
+footer {
+    background-color: #ebfcff; 
+    color: #18b5b2;
+    padding: 10px;
+    width: 100%; 
+}
