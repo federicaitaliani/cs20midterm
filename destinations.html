@@ -10,6 +10,38 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            margin-top: 60px; /* Adjust based on the height of the nav bar */
+        }
+
+        /* Navigation Bar Styling */
+        ul#nav {
+            list-style-type: none;
+            font-size: 22px;
+            text-align: left;
+            width: 100%;
+            display: inline-block;
+            background-color: #ebebff;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000; /* Ensure it stays above other content */
+        }
+
+        ul#nav a {
+            color: #6450d5;
+            padding: 15px 20px; /* Consistent padding */
+            text-decoration: none; /* Remove underline */
+            display: inline-block;
+        }
+
+        ul#nav a:hover {
+            color: #f6f9cf;
+            background-color: #6450d5;
+        }
+
+        ul#nav li {
+            display: inline-block;
         }
 
         #places-section {
@@ -80,6 +112,15 @@
     </style>
 </head>
 <body>
+    
+    <ul id="nav">
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='aboutus.html'>About Us</a></li>
+        <li><a href='services.html'>Services</a></li>
+        <li><a href='destinations.html'>Destinations</a></li>
+        <li><a href='reviews.html'>Reviews</a></li>
+        <li><a href='contactus.html'>Contact</a></li>
+    </ul>
 
     <div id="places-section">
         <h2 class="places-text">Where can we take you?</h2>
