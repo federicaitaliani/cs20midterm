@@ -1,31 +1,181 @@
-<!doctype html> 
-<html> 
-<head>
-<style type="text/css">
+<!doctype html>
+<html>
 
-  
-</style>
+<head>
+    <title>Contact Us - Escape Route</title>
+    <style type="text/css">
+        html, body {
+            background-color: #C1E2EF;
+            margin: 0;
+            padding: 0;
+            font-family: Calibri, sans-serif, Verdana;
+            overflow-x: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        ul#nav {
+            list-style-type: none;
+            font-size: 22px;
+            text-align: left;
+            width: 100%;
+            display: inline-block;
+            background-color: #ebebff;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+        }
+
+        ul#nav a {
+            color: #6450d5;
+            padding: 15px 0px;
+            width: 150px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        ul#nav a:hover {
+            color: #f6f9cf;
+            background-color: #6450d5;
+        }
+
+        ul#nav li {
+            display: inline-block;
+        }
+
+        #nav {
+            z-index: 1000;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 80px auto 40px;
+            padding: 40px;
+            background-color: #ebeef8;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border: 5px solid #fbffc9;
+        }
+
+        .contact-container p {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .contact-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-container label {
+            font-size: 18px;
+            color: #6450d5;
+            margin-bottom: 5px;
+        }
+
+        .contact-container input[type="email"],
+        .contact-container textarea {
+            width: 90%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .contact-container textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #6450d5;
+            color: #f6f9cf;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 18px;
+            border: none;
+            width: 50%;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #3e2d99;
+            color: #f6f9cf;
+        }
+
+        footer {
+            background-color: #ebebff;
+            color: #6450d5;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #6450d5;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-    <p> Contact us!</p>
-    <form action="#" method="POST">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    
-        <label for="inquiry">Inquiry:</label>
-        <textarea id="inquiry" name="inquiry" required></textarea>
-    
-        <button type="submit">Submit</button>
-    </form>
-    <p> You can also reach us at +1 (123) 456 7980</p>
-<footer> 
-    <nav>
-        <ul id="nav">
-            <li><a href="aboutus.html">About us</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contactus.html">Contact us</a></li>
-        </ul>
-    </nav>
-</footer>
+    <ul id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+
+    <div class="contact-container">
+        <p>Contact us!</p>
+        <form action="#" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="inquiry">Inquiry:</label>
+            <textarea id="inquiry" name="inquiry" required></textarea>
+
+            <button type="submit" class="button">Submit</button>
+        </form>
+        <p>You can also reach us at +1 (123) 456 7980</p>
+    </div>
+
+    <footer>
+        <p>Escape Route &copy; 2024 | Email: <a href="mailto:info@escaperoute.com">info@escaperoute.com</a></p>
+        <nav>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
+
 </html>
+
