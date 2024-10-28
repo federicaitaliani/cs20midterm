@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Route</title>
+    <style>
+		html, body {background-color: #e0f6f2;
+            margin: 0;
+            padding: 0;
+            font-family: Calibri, sans-serif, Verdana;
+            overflow-x: hidden;
+        }
+
+        * {
+            box-sizing: border-box; 
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        ul#nav {
+            list-style-type: none;
+            font-size: 22px;
+            text-align: left;
+            width: 100%;
+            display: inline-block;
+            background-color: #ebfcff;
+            margin: 0px;
+            top: 0;
+            padding: 0;
+            position: fixed
+        }
+        
+        ul#nav a {
+            color: #18b5b2;
+            padding: 15px 0px;
+            width: 150px; text-align: center;
+            display: inline-block;
+        }
+        
+        ul#nav a:hover {
+            color: #f4d7c8;
+            background-color: #18b5b2;
+        }
+        
+        ul#nav li {
+            display: inline-block
+        } 
+        
+        #nav {
+            z-index: 1000;
+        }
+
+        .container { 
+			margin: 0 auto;
+			padding: 20px; 
+			border: 1px solid #18b5b2; 
+			margin-top: 150px; 
+			margin-bottom: 100px;
+			border-radius: 8px; 
+			max-width: 800px;
+			background-color: #ebfcff;
+		}
+
+        h1 { 
+			text-align: center; 
+		}
+
+        label { 
+            display: block;
+            margin-top: 10px;
+            font-weight: bold; 
+        }
+
+        input, select { 
+            width: 100%;
+            padding: 8px; 
+            margin-top: 5px; }
+
+        .cost { 
+            font-size: 1.2em; 
+            text-align: center; }
+
+		.radio-time input {
+			width: 5%;
+			display: inline-block;
+			margin-top: 10px;
+			margin-bottom: 25px;
+		}
+
+        input[type="submit"] {
+            width: 20%;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+
+        #error {
+            color: #ff0000;    
+            margin-top: 10px;   
+            text-align: center;
+
+        }
+
+        #costDisplay {
+            display: none;
+            margin-bottom: 15px;
+        }
+
+		footer {
+            background-color: #ebfcff; 
+            color: #18b5b2;
+            padding: 10px;
+            width: 100%; 
+			vertical-align: bottom;
+        }
+		
+    </style>
+</head>
+<body>
+	<ul id="nav">
+		<li><a href='index.html'>Home</a></li>
+		<li><a href='aboutus.html'>About Us</a></li>
+		<li><a href='services.html'>Services</a></li>
+		<li><a href='destinations.html'>Destinations</a></li>
+		<li><a href='reviews.html'>Reviews</a></li>
+		<li><a href='contactus.html'>Contact</a></li>
+	</ul>
+	
+    <div class="container">
+
+        <h1>Book Your Travel</h1>
+
+        <form id="booking-form">
+            <label>Destination</label>
+            <input type="text" id="destination" name="destination" placeholder="Enter your destination">
+
+            <label>Type of Service</label>
+            <select id="service-type" name="service-type">  
+                <option value="">Select a Category</option>
+                <option value="travel-planning">Travel Planning</option>
+				<option value="accommodation-transportation">Accommodation & Transportation</option>
+				<option value="experiences">Experiences</option>
+				<option value="weddings-events">Weddings & Special Events</option>
+            </select>
+
+            <label>Start Date</label>
+            <input type="date" id="start-date" name="start-date">
+            
+            <label>End Date</label>
+            <input type="date" id="end-date" name="end-date">
+
+            <label>Number of Travelers</label>
+            <input type="number" id="travelers" name="travelers" min="1" placeholder="Enter number of travelers">
+			
+			<label>Preferred Travel Time</label>
+            <div class="radio-time">
+                <input type="radio" name="time" value="morning">Morning (8 AM - 12 PM)
+                <input type="radio" name="time" value="afternoon">Afternoon  (12 PM - 5 PM)
+                <input type="radio" name="time" value="evening">Evening (5 PM - 9 PM)
+            </div>
+
+            <input type="submit" value="Calculate Cost">
+        </form>
+
+        <div id="error">&nbsp;</div>
+
+        <div class="cost" id="costDisplay">Total Cost: $0</div>
+    </div>
+
+	<footer>
+        <p>
+            Escape Route &copy; 2024 | Email: <a class="email-link" href="#">info@escaperoute.org</a>
+        </p>
+    </footer>
+
+    <script>
+
+        window.onload = function() {
+            document.getElementById("booking-form").reset();  
+
+            document.getElementById("booking-form").addEventListener("submit", function(event) {
+                if (!validate()) {
+                    event.preventDefault();
+                } else {
+                    calculateCost();
+                    event.preventDefault();
+                }
+            });
+        };
+
+		function validate() {
+
+			let reqFields = ["destination", "service-type", "start-date", "end-date", "travelers"]
+			let reqNames = ["Destination", "Type of Service", "Start Date", "End Date", "Number of Travelers"]
+			let err = ""
+
+            for (i=0;i<reqFields.length;i++)
+            {
+                if (document.getElementById(reqFields[i]).value =="")
+                    err +=  reqNames[i] + " is required<br/>";
+            }
+
+            const timeRadios = document.getElementsByName("time");
+            let isTimeSelected = false;
+
+            for (let i = 0; i < timeRadios.length; i++) {
+                if (timeRadios[i].checked) {
+                    isTimeSelected = true;
+                    break;
+                }
+            }
+
+            if (!isTimeSelected) {
+                err += "Preferred Travel Time is required<br/>";
+            }
+
+            if (err !== "") 
+            {
+                document.getElementById('error').innerHTML =
+                        "Fix the following errors to continue:<br>" + err;
+                return false;
+            }  else {
+                document.getElementById("error").innerHTML = "";
+                return true;
+            }
+		}
+
+        var servicePrices = {
+            "travel-planning": 100,
+            "accommodation-transportation": 500,
+            "experiences": 300,
+            "weddings-events": 2000
+        };
+
+        function calculateCost() {
+            let serviceType = document.getElementById("service-type").value;
+            let travelers = parseInt(document.getElementById("travelers").value)
+            let totalCost = servicePrices[serviceType] * travelers;
+
+            let costDisplay = document.getElementById('costDisplay');
+            costDisplay.innerHTML = 'Total Cost: $' + totalCost;
+            costDisplay.style.display = 'block';
+        }
+
+    </script>
+</body>
+</html>
