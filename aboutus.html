@@ -6,12 +6,11 @@
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
-        html,
-        body {
+        html, body {
             background-color: #e0f6f2;
             margin: 0;
             padding: 0;
-            font-family: 'Arial Black', Arial, sans-serif; /* Bold font */
+            font-family: Calibri, sans-serif, Verdana;
             overflow-x: hidden;
         }
 
@@ -42,10 +41,10 @@
 
         ul#nav a {
             color: #18b5b2;
-            padding: 15px 20px;
+            padding: 15px 0px;
+            width: 150px;
             text-align: center;
             display: inline-block;
-            font-weight: bold; /* Bold links */
         }
 
         ul#nav a:hover {
@@ -57,77 +56,66 @@
             display: inline-block;
         }
 
-        .about-banner {
-            text-align: center;
-            margin: 60px 0 20px 0;
+        #nav {
+            z-index: 1000;
         }
 
-        .about-banner h1 {
-            font-size: 50px; /* Increased font size */
+        .about-banner {
+            background-image: url("https://github.com/federicaitaliani/cs20midterm/raw/main/aboutusparadise.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        #about {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #f6f9cf;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        #about h1 {
+            font-size: 36px;
             color: #18b5b2;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
         }
 
-        .about-banner img {
-            width: 100%;
-            max-width: 800px; /* Maximum width of the image */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 15px; /* Rounded corners */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-        }
-
-        .about-content {
-            padding: 40px 20px; /* More padding for a spacious feel */
-            max-width: 1200px;
-            margin: 0 auto; /* Center align */
-            background-color: #f6f9cf;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            text-align: left; /* Left-aligned text */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
-
-        .about-content h2 {
-            font-size: 36px; /* Section title font size */
-            color: #18b5b2;
-            margin-bottom: 20px; /* Space below the title */
-            border-bottom: 2px solid #18b5b2; /* Underline effect */
-            padding-bottom: 10px; /* Space between title and content */
-        }
-
-        .about-content p {
-            margin: 20px 0; /* Spacing between paragraphs */
-            padding: 0 20px; /* Padding for better readability */
-            font-size: 20px; /* Text size */
-            line-height: 1.6; /* Improved line spacing */
+        #about p {
+            margin: 20px 0;
         }
 
         footer {
             background-color: #ebfcff;
             color: #18b5b2;
-            padding: 20px;
-            width: 100%;
+            padding: 10px;
             text-align: center;
-            font-size: 18px; /* Footer text size */
         }
     </style>
 </head>
 
 <body>
-
     <ul id="nav">
         <li><a href='index.html'>Home</a></li>
-        <li><a href='aboutus.html'>About Us</a></li>
-        <li><a href='services.html'>Services</a></li>
-        <li><a href='destinations.html'>Destinations</a></li>
-        <li><a href='reviews.html'>Reviews</a></li>
+        <li><a href='get-involved.html'>Get Involved</a></li>
         <li><a href='contactus.html'>Contact</a></li>
+        <li><a href='aboutus.html'>About Us</a></li>
     </ul>
 
     <div class="about-banner">
-        <h1>About Us</h1>
-        <img src="https://raw.githubusercontent.com/federicaitaliani/cs20midterm/main/aboutusparadise.jpg" alt="Travel Experience" />
+        Discover Your Next Adventure with Escape Route
     </div>
 
     <div class="about-content">
@@ -157,6 +145,5 @@
             Escape Route &copy; 2024 | Email: <a class="email-link" href="#">info@escaperoute.org</a>
         </p>
     </footer>
-
 </body>
 </html>
