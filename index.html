@@ -10,22 +10,22 @@
             background-size: cover;
             background-position: center top;
             text-align: center;
-            height: 440px;
+            height: 620px;
+            padding: 80px auto;
             padding-top: 120px;
-            margin-top: 40px;
+            margin: 40px 0 100px 0;
+        }
+
+        .banner h1 {
+            font-size: 65px;
+            color: #ffffff;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+            margin: 0 15%; 
         }
         
         .banner h2 {
-            font-size: 60px;
-            margin: 0;
-            padding-bottom: 10px;
-            color: #ebebff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        }
-        
-        .banner p {
-            font-size: 45px;
-            color: #6450d5;
+            font-size: 50px;
+            color: #18b5b2;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
             margin: 0;
         }
@@ -36,15 +36,12 @@
             text-align: center;
             width: 80%;
             font-size: 22px;
-            background-color: #f6f9cf;
+            background-color: #ebfcff;
+            border: 2px solid #18b5b2;
             margin: 0 auto;
             margin-top: 120px;
             margin-bottom: 60px;
             border-radius: 10px;
-        }
-        
-        #mission h1 {
-            font-size: 40px;
         }
         
         #mission p {
@@ -53,39 +50,39 @@
             padding: 0 45px;
         }
         
-        .button {
+        .button, .page-btn {
             padding: 10px 20px;
-            background-color: #6450d5;
-            color: #f6f9cf;
+            background-color: #f4d7c8; 
+            color: #18b5b2;
             border-radius: 5px;
             display: inline-block;
             text-transform: uppercase;
             font-size: 18px;
             border: none;
             margin-top: 15px;
-            width: 90%;
+            width: 30%;
             text-align: center;
         }
         
-        .button:hover {
-            background-color: #3e2d99;
-            color: #f6f9cf;
+        .button:hover, .page-btn:hover {
+            background-color: #18b5b2;
+            color: #f4d7c8;;
         }
         
-        #benefits-section {
+        #pages-section {
             padding: 30px 20px;
             margin: 20px auto;
             border-radius: 10px;
         }
         
-        #benefits-container {
+        #pages-container {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
         }
         
-        .benefits {
+        .pages {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -94,28 +91,34 @@
             padding: 20px;
         }
         
-        .benefits img {
+        .pages img {
             width: 100%;
             height: 200px;
             object-fit: cover;
             border-radius: 10px;
         }
         
-        .button-container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
+        .page-btn {
+            width: 60%;
+        }
+
+        #signup-btn {
+            width: 15%;
         }
 
         #signup {
-            background-color: #ebeef8;
+            background-color: #ebfcff;
             padding: 20px;
             text-align: center;
             border-radius: 10px;
-            border: 7px solid #fbffc9;
+            border: 2px solid #18b5b2;
             margin: 80px auto;
             margin-bottom: 120px;
             width: 60%;
+        }
+
+        input {
+            width: 35%;
         }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -132,8 +135,8 @@
     </ul>
 
     <div class="banner">
-        <h2>Escape Route</h2>
-        <p>Find your path to paradise</p>
+        <h1>Escape Route</h1>
+        <h2>Find your path to paradise</h2>
     </div>
 
     <div id="mission">
@@ -145,31 +148,23 @@
         <a href="aboutus.html" class="button">Learn More About Us</a>
     </div>
 
-    <div id="benefits-section">
-        <div id="benefits-container"> 
-            <div class="benefits">
-                <img src="paradise.jpg" />
-                <div class="button-container">
-                    <a href="services.html" class="button">Services</a>
-                </div>
+    <div id="pages-section">
+        <div id="pages-container"> 
+            <div class="pages">
+                <img src="paradise.jpg"/>
+                    <a href="services.html" class="page-btn">Services</a>
             </div>
-            <div class="benefits">
+            <div class="pages">
                 <img src="reviewsnubes.jpg"/>
-                <div class="button-container">
-                    <a href="reviews.html" class="button">Reviews</a>
-                </div>
+                    <a href="reviews.html" class="page-btn">Reviews</a>
             </div>
-            <div class="benefits">
-                <img src="destinationscan.jpg" />
-                <div class="button-container">
-                    <a href="destinations.html" class="button">Destinations</a>
-                </div>
+            <div class="pages">
+                <img src="destinationscan.jpg"/>
+                    <a href="destinations.html" class="page-btn">Destinations</a>
             </div>
-            <div class="benefits">
-                <img src="contactUs.jpg" alt="Contact Us" />
-                <div class="button-container">
-                    <a href="contactus.html" class="button">Contact Us</a>
-                </div>
+            <div class="pages">
+                <img src="contactUs.jpg"/>
+                    <a href="contactus.html" class="page-btn">Contact Us</a>
             </div>
         </div>
     </div>
@@ -182,7 +177,7 @@
                 <label>Email:</label>
                 <input type="text" name="Email" />
             </div>
-            <input type="submit" value="Sign Up" class="button">
+            <input type="submit" value="Sign Up" class="button" id="signup-btn">
         </form>
     </div>
 
@@ -195,4 +190,3 @@
 </body>
 
 </html>
-
