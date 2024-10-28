@@ -1,11 +1,11 @@
-
 <!doctype html>
 <html>
 
 <head>
     <title>Escape Route</title>
     <style type="text/css">
-        html, body {background-color: ##C1E2EF;
+        html, body {
+            background-color: #C1E2EF;
             margin: 0;
             padding: 0;
             font-family: Calibri, sans-serif, Verdana;
@@ -13,7 +13,7 @@
         }
         
         * {
-            box-sizing: border-box; 
+            box-sizing: border-box;
         }
         
         a {
@@ -34,13 +34,14 @@
             margin: 0px;
             top: 0;
             padding: 0;
-            position: fixed
+            position: fixed;
         }
         
         ul#nav a {
             color: #6450d5;
             padding: 15px 0px;
-            width: 150px; text-align: center;
+            width: 150px;
+            text-align: center;
             display: inline-block;
         }
         
@@ -50,7 +51,7 @@
         }
         
         ul#nav li {
-            display: inline-block
+            display: inline-block;
         } 
         
         #nav {
@@ -63,24 +64,23 @@
             background-position: center top;
             text-align: center;
             height: 440px;
-            padding: 80px auto;
             padding-top: 120px;
             margin-top: 40px;
         }
         
         .banner h2 {
-            font-size: 60px; 
+            font-size: 60px;
             margin: 0;
-            padding-bottom: 10px; 
+            padding-bottom: 10px;
             color: #ebebff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
         
         .banner p {
             font-size: 45px;
             color: #6450d5;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
-            margin: 0; 
+            margin: 0;
         }
         
         #mission {
@@ -109,7 +109,7 @@
         #mission .button {
             padding: 10px 20px;
             background-color: #c3baf7;
-            color: #6450d5;;
+            color: #6450d5;
             border-radius: 5px;
             display: inline-block;
             text-transform: uppercase;
@@ -123,53 +123,51 @@
         }
         
         #benefits-section {
-            padding: 30px 20px; 
-            margin: 20px auto; 
-            border-radius: 10px; 
+            padding: 30px 20px;
+            margin: 20px auto;
+            border-radius: 10px;
         }
         
         #benefits-container {
             display: flex;
-            justify-content: center; 
+            justify-content: center;
             flex-wrap: wrap;
-            gap: 20px; 
+            gap: 20px;
         }
         
         .benefits {
-            display: flex; 
+            display: flex;
             flex-direction: column;
-            flex-basis: 18%;
-            border-radius: 10px; 
-            padding: 35px; 
-            text-align: center; 
-        }
-        
-        .benefits p {
+            align-items: center;
+            flex-basis: 22%;
+            border-radius: 10px;
+            padding: 10px;
             text-align: center;
-            margin: 0;
-            padding-bottom: 30px; 
-            flex-grow: 1;
-            font-size: 15px;
         }
         
         .benefits img {
-            max-width: 100%; 
-            height: auto; 
-            border-radius: 10px; 
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Adjust height */
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
         
-        #benefits-section h2 {
-            font-size: 28px;
-            margin-bottom: 10px; 
-        }
-        
-        .benefits h3 {
-            font-size: 20px;
-        }
-        
-        .benefits-text {
-            text-align: center;
+        .benefits .button {
+            padding: 10px 20px;
+            background-color: #6450d5;
+            color: #f6f9cf;
+            border-radius: 5px;
             font-size: 18px;
+            text-transform: uppercase;
+            margin-top: 10px;
+            width: 80%; /* Ensures button is centered */
+            text-align: center;
+        }
+        
+        .benefits .button:hover {
+            background-color: #c3baf7;
+            color: #6450d5;
         }
         
         #signup {
@@ -183,15 +181,11 @@
             width: 60%;
         }
         
-        #signup .form-element {
-            display: inline-block;
-        }
-        
         footer {
-            background-color: #ebebff; 
+            background-color: #ebebff;
             color: #6450d5;
             padding: 10px;
-            width: 100%; 
+            width: 100%;
         }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -221,33 +215,26 @@
         <a href="aboutus.html" class="button">Learn More About Us</a>
     </div>
 
-   
-    
-       <div id="benefits-section">
-           <div id="benefits-container"> 
+    <div id="benefits-section">
+        <div id="benefits-container"> 
             <div class="benefits">
-                <img src="paradise.jpg" />
-                <a href="services.html" class="button"> Services </a>
-                <p></p>
+                <img src="paradise.jpg" alt="Services Image"/>
+                <a href="services.html" class="button">Services</a>
             </div>
             <div class="benefits">
-                <img src="reviewsnubes.jpg"/>
-                <a href="reviews.html" class="button"> Reviews </a>
-               
-            
+                <img src="reviewsnubes.jpg" alt="Reviews Image"/>
+                <a href="reviews.html" class="button">Reviews</a>
             </div>
             <div class="benefits">
-                <img src="sensitive_skin_cat.jpg" alt="Sensitive-Skinned Cat" />
-                  <a href="destinations.html" class="button"> Destination </a>
+                <img src="destinationscan.jpg" alt="Destinations Image"/>
+                <a href="destinations.html" class="button">Destination</a>
             </div>
             <div class="benefits">
-                <img src="cold_cat.jpg" alt="Cat in Cold Climate" />
-               <a href="contactus.html" class="button"> Conctact Us </a>
+                <img src="contactUs.jpg" alt="Contact Us Image"/>
+                <a href="contactus.html" class="button">Contact Us</a>
             </div>
-            </div>
-         </div>
-     
-  
+        </div>
+    </div>
 
     <div id="signup">
         <h2>Stay Updated!</h2>
@@ -255,9 +242,9 @@
         <form method="get" action="#">
             <div class="form-element">
                 <label>Email:</label>
-                <input type ="text" name="Email" /></div>
-                <input type="submit" value="Sign Up">
-        </div>
+                <input type="text" name="Email"/>
+            </div>
+            <input type="submit" value="Sign Up">
         </form>
     </div>
 
@@ -266,7 +253,7 @@
             Clothe The Cats &copy; 2024 | Email: <a class="email-link" href="#">info@clothethecats.org</a>
         </p>
     </footer>
-    
 </body>
 
 </html>
+
