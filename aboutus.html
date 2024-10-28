@@ -3,12 +3,13 @@
 
 <head>
     <title>About Us - Escape Route</title>
-    <style type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
         html, body {
             background-color: #C1E2EF;
             margin: 0;
             padding: 0;
-            font-family: Calibri, sans-serif, Verdana;
+            font-family: 'Arial', sans-serif;
             overflow-x: hidden;
         }
 
@@ -18,23 +19,23 @@
 
         ul#nav {
             list-style-type: none;
-            font-size: 22px;
-            text-align: left;
+            font-size: 18px;
+            text-align: center;
             width: 100%;
-            display: inline-block;
+            display: flex;
+            justify-content: center;
             background-color: #ebebff;
-            margin: 0px;
-            top: 0;
-            padding: 0;
+            margin: 0;
+            padding: 15px 0;
             position: fixed;
+            z-index: 1000;
         }
 
         ul#nav a {
             color: #6450d5;
-            padding: 15px 0px;
-            width: 150px; 
-            text-align: center;
-            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         ul#nav a:hover {
@@ -42,32 +43,35 @@
             background-color: #6450d5;
         }
 
-        ul#nav li {
-            display: inline-block;
-        }
-
-        #nav {
-            z-index: 1000;
-        }
-
         #about {
-            padding: 50px 20px;
-            text-align: center;
-            width: 60%;
-            font-size: 22px;
-            background-color: #f6f9cf;
+            padding: 80px 20px;
+            text-align: left;
+            width: 80%;
+            max-width: 800px;
             margin: 100px auto;
             border-radius: 10px;
+            background-color: #f6f9cf;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        #about h1 {
-            font-size: 40px;
+        h1 {
+            text-align: center;
+            color: #6450d5;
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
-        #about p {
-            margin-top: 0;
-            margin-bottom: 50px;
-            padding: 0 45px;
+        h2 {
+            color: #6450d5;
+            font-size: 28px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 15px 0;
+            line-height: 1.6;
+            padding: 0 20px;
         }
 
         footer {
@@ -76,9 +80,45 @@
             padding: 10px;
             width: 100%; 
             text-align: center;
+            position: relative;
+            bottom: 0;
+        }
+
+        /* Button Styles */
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #c3baf7;
+            color: #6450d5;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #6450d5;
+            color: #f6f9cf;
+        }
+
+        /* Image Styles */
+        .about-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        /* Section styles */
+        .section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
         }
     </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -86,54 +126,57 @@
         <li><a href='index.html'>Home</a></li>
         <li><a href='get-involved.html'>Get Involved</a></li>
         <li><a href='contactus.html'>Contact</a></li>
-        <li><a href='aboutus.html'>About Us</a></li> <!-- Link to About Us Page -->
+        <li><a href='aboutus.html'>About Us</a></li>
     </ul>
 
     <div id="about">
         <h1>About Us</h1>
-        <p>At Escape Route, we believe that travel is a deeply personal experience, 
-        and no two journeys should be the same. Founded with the vision of offering 
-        bespoke travel services, we are a boutique agency that specializes in curating 
-        one-of-a-kind adventures, designed to meet the specific desires, dreams, and 
-        interests of each traveler. Whether you’re seeking a secluded island retreat, 
-        an exhilarating adventure across rugged landscapes, or an immersive journey into 
-        the heart of a new culture, we tailor every aspect of your trip to create memories 
-        that last a lifetime.</p>
+        
+        <div class="section">
+            <img src="your-image-url.jpg" alt="Travel Experience" class="about-image"> <!-- Replace with an appropriate image URL -->
+            <p>At Escape Route, we believe that travel is a deeply personal experience, and no two journeys should be the same. Our boutique agency specializes in curating one-of-a-kind adventures tailored to meet your unique desires, dreams, and interests.</p>
+        </div>
 
-        <p>Our team at Escape Route is passionate about crafting travel experiences that 
-        go beyond the ordinary. We take the time to get to know you—your travel preferences, 
-        your pace, your interests—so that we can create customized itineraries that are perfectly 
-        suited to you. We pride ourselves on uncovering hidden gems, offering exclusive access to 
-        destinations and experiences that only seasoned travelers know about. From remote, 
-        tranquil beaches to vibrant, bustling cities, we ensure that your travel experience 
-        is both seamless and personalized.</p>
+        <div class="section">
+            <h2>Our Passion</h2>
+            <p>Our team is dedicated to crafting travel experiences that go beyond the ordinary. We take the time to understand your travel preferences, pace, and interests to create customized itineraries just for you.</p>
+        </div>
 
-        <p>With Escape Route, no detail is overlooked. We offer end-to-end planning services, 
-        taking care of everything from transportation and accommodation to dining recommendations 
-        and unique local experiences. Whether you’re traveling solo, as a couple, with family, or 
-        as part of a group, we cater to all types of travelers. We work with trusted partners 
-        around the globe to provide unparalleled service and ensure that your trip exceeds 
-        expectations.</p>
+        <div class="section">
+            <h2>Unforgettable Experiences</h2>
+            <p>From tranquil beaches to vibrant cities, we uncover hidden gems and offer exclusive access to experiences that only seasoned travelers know about. Every detail of your journey is tailored to ensure a seamless and personalized adventure.</p>
+        </div>
 
-        <p>At the heart of Escape Route is our belief in the transformative power of travel. 
-        We don’t just book vacations; we create personalized escapes that allow you to step 
-        outside the everyday and into a world of exploration, relaxation, and discovery. 
-        Our goal is to remove the stress of travel planning, leaving you free to fully 
-        immerse yourself in the experience.</p>
+        <div class="section">
+            <h2>Transformative Travel</h2>
+            <p>We don’t just book vacations; we create personalized escapes that allow you to step outside the everyday and into a world of exploration and discovery. Our goal is to remove the stress of travel planning, leaving you free to immerse yourself in your experience.</p>
+        </div>
 
-        <p>Let Escape Route guide you to your next unforgettable journey. Whether you’re 
-        dreaming of an adventure in the wild, a cultural deep dive, or a luxury escape, 
-        we’re here to turn your vision into reality. No matter where your travels take you, 
-        we’ll be with you every step of the way, ensuring that your journey is as unique as 
-        you are.</p>
+        <div class="section">
+            <h2>Your Next Journey</h2>
+            <p>Let Escape Route guide you to your next unforgettable adventure. Whether you’re dreaming of exploring the wild, delving into culture, or enjoying a luxury retreat, we’re here to make your vision a reality.</p>
+            <a href="contactus.html" class="cta-button">Contact Us to Start Your Journey!</a>
+        </div>
     </div>
 
     <footer>
         <p>
-            Escape Route &copy; 2024 | Email: <a class="email-link" href="#">info@escaperoute.org</a>
+            Escape Route &copy; 2024 | Email: <a class="email-link" href="mailto:info@escaperoute.org">info@escaperoute.org</a>
         </p>
     </footer>
 
+    <script>
+        // Optional: Smooth scroll to sections
+        document.querySelectorAll('ul#nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
