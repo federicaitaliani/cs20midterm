@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Paris Adventure</title>
     <link rel="stylesheet" href="style.css" />
-        <style>
+    <style>
     body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -45,7 +45,7 @@
     overflow: hidden;
     border-radius: 15px;
     background-color: #f8f8f8; 
-    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+/*     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1); */
 }
 
 .section img {
@@ -72,43 +72,42 @@
     color: #555; 
 }
 
-#itinerary h2 {
+#itinerary {
+    padding: 0;
     text-align: center;
-    color: #d84b6b;
-    font-weight: 600;
-    font-size: 32px;
+}
+
+.itinerary-header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
-#itinerary {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+#itinerary ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.itinerary-day {
-    flex: 1;
-    min-width: 280px;
-    padding: 20px;
-    background-color: #f3f4f6;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
+#itinerary li {
+    margin-bottom: 20px;
 }
 
-.itinerary-day h3 {
-    margin: 0 0 10px;
+#itinerary li h3 {
     color: #d84b6b;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 22px;
+    margin: 0 0 10px;
 }
 
-.itinerary-day p {
+#itinerary li p {
     margin: 0;
     font-size: 15px;
     line-height: 24px;
     color: #555;
 }
-
 @media (max-width: 768px) {
     h1 {
         font-size: 32px;
