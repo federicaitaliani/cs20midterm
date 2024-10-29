@@ -62,71 +62,75 @@
             padding: 15px;
             color: #666;
         }
-.learn-more-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 0 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #18b5b2;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.learn-more-btn:hover {
-    background-color: #14a29a;
-}
-
-        @media (max-width: 768px) {
-            .places {
-                width: 45%;
-            }
+        .learn-more-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #18b5b2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
-        @media (max-width: 500px) {
-            .places {
-                width: 90%;
-            }
+        .learn-more-btn:hover {
+            background-color: #14a29a;
         }
+
+                @media (max-width: 768px) {
+                    .places {
+                        width: 45%;
+                    }
+                }
+
+                @media (max-width: 500px) {
+                    .places {
+                        width: 90%;
+                    }
+                }
     </style>
 </head>
 
 <body>
 
-    <ul id="nav">
-        <li><a href='index.html'>Home</a></li>
-        <li><a href='aboutus.html'>About</a></li>
-        <li><a href='services.html'>Services</a></li>
-        <li><a href='destinations.html'>Destinations</a></li>
-        <li><a href='reviews.html'>Reviews</a></li>
-        <li><a href='contactus.html'>Contact</a></li>
-    </ul>
+    <nav class="navbar">
+        <a href="index.html"><img src="logo.jpg" alt="Logo" class="logo"></a>
+        <ul id="nav">
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="book-now.html">Book</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <div id="places-section">
         <h1 class="places-text">Where can we take you?</h1>
         <p class="places-text">
             Click to explore what your dream trip to our top destinations, like Paris, New York, or London, could look like!
         </p>
-<div id="places-container">
-    <a href='NewYork.html' class="places">
-        <img src="newyorkCover.jpg" alt="New York" />
-        <h2>New York</h2>
-        <p>Experience the vibrant energy of New York City, where iconic skyscrapers meet world-class art and entertainment.</p>
-        <button class="learn-more-btn">Learn More</button>
-    </a>
-    <a href='Paris.html' class="places">
-        <img src="parisCover.jpg" alt="Paris" />
-        <h2>Paris</h2>
-        <p>Discover the romance and elegance of Paris, from the Eiffel Tower to charming sidewalk cafés.</p>
-        <button class="learn-more-btn">Learn More</button>
-    </a>
-    <a href='London.html' class="places">
-        <img src="london1.jpg" alt="London" />
-        <h2>London</h2>
-        <p>Uncover the rich history and modern allure of London, with its royal landmarks and bustling urban vibe.</p>
-        <button class="learn-more-btn">Learn More</button>
-    </a>
-</div>
+        <div id="places-container">
+            <a href='NewYork.html' class="places">
+                <img src="newyorkCover.jpg" alt="New York" />
+                <h2>New York</h2>
+                <p>Experience the vibrant energy of New York City, where iconic skyscrapers meet world-class art and entertainment.</p>
+                <button class="learn-more-btn">Learn More</button>
+            </a>
+            <a href='Paris.html' class="places">
+                <img src="parisCover.jpg" alt="Paris" />
+                <h2>Paris</h2>
+                <p>Discover the romance and elegance of Paris, from the Eiffel Tower to charming sidewalk cafés.</p>
+                <button class="learn-more-btn">Learn More</button>
+            </a>
+            <a href='London.html' class="places">
+                <img src="london1.jpg" alt="London" />
+                <h2>London</h2>
+                <p>Uncover the rich history and modern allure of London, with its royal landmarks and bustling urban vibe.</p>
+                <button class="learn-more-btn">Learn More</button>
+            </a>
+        </div>
     </div>
 
     <footer>
