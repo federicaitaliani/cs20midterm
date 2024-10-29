@@ -49,10 +49,7 @@ ul#nav li {
 #nav {
     z-index: 1000;
 }
-.logo {
-    width: 10px;
-    height: auto;
-}
+
 
 footer {
     background-color: #ebfcff; 
