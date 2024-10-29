@@ -1,4 +1,5 @@
-html, body {background-color: #e0f6f2;
+html, body {
+    background-color: #e0f6f2;
     margin: 0;
     padding: 0;
     font-family: Calibri, sans-serif, Verdana;
@@ -6,7 +7,7 @@ html, body {background-color: #e0f6f2;
 }
 
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 a {
@@ -17,43 +18,85 @@ a {
     text-decoration: underline;
 }
 
+/* Navbar Styles */
+.navbar {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebfcff; 
+    height: 80px; 
+}
+
+.logo {
+    height: 84px; 
+}
+
+/* Navigation List */
 ul#nav {
-    list-style-type: none;
-    font-size: 22px;
-    text-align: right;
-    width: 100%;
-    display: inline-block;
-    background-color: #ebfcff;
-    margin: 0px;
-    top: 0;
-    padding: 0;
-    position: fixed
-}
-
-ul#nav a {
-    color: #18b5b2;
-    padding: 15px 0px;
-    width: 150px; text-align: center;
-    display: inline-block;
-}
-
-ul#nav a:hover {
-    color: #f4d7c8;
-    background-color: #18b5b2;
+    list-style-type: none; 
+    font-size: 22px; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+    align-items: center; 
 }
 
 ul#nav li {
-    display: inline-block
-} 
-
-#nav {
-    z-index: 1000;
+    display: inline-block; 
 }
 
+ul#nav a {
+    color: #18b5b2; 
+    padding: 15px 25px; 
+    display: block; 
+    transition: background-color 0.3s ease; 
+    line-height: 50px; 
+    text-align: center; 
+}
+
+ul#nav a:hover {
+    color: #f4d7c8; 
+    background-color: #18b5b2; 
+}
 
 footer {
-    background-color: #ebfcff; 
-    color: #18b5b2;
-    padding: 10px;
+    background-color: #ebfcff;
+    color: #18b5b2; 
+    padding: 10px; 
     width: 100%; 
+}
+
+@media (max-width: 900px) {
+    .button, .page-btn, #signup-btn, #signup {
+        font-size: 12px;
+    }
+
+    ul#nav a {
+        font-size: 16px;
+    }
+
+    ul#nav li {
+        padding: 0;
+    }
+}
+
+@media (max-width: 770px) {
+    .navbar {
+        flex-direction: column;  
+        height: auto; 
+    }
+
+    ul#nav {
+        flex-wrap: wrap; 
+        justify-content: center; 
+        width: 100%;
+        padding: 0;
+    }
+
+    ul#nav li {
+        flex: 1 0 calc(33.33% - 10px); 
+        max-width: calc(33.33% - 10px);
+        text-align: center; 
+        box-sizing: border-box; 
+    }
 }
