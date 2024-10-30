@@ -45,7 +45,7 @@
         
         #mission p {
             margin-top: 0;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             padding: 0 45px;
         }
         
@@ -53,14 +53,22 @@
             padding: 10px 20px;
             background-color: #f4d7c8; 
             color: #034a49;
-            border-radius: 5px;
+            border-radius: 10px;
             display: inline-block;
             text-transform: uppercase;
-            font-size: 14px;
+            font-size: 16px;
             border: none;
             margin-top: 15px;
             width: 30%;
             text-align: center;
+        }
+
+        .banner .button {
+            visibility: hidden;
+            background-color: #a9e4d9; 
+            color: #18b5b2;
+            border: 2px solid #18b5b2;
+            font-weight: bold;
         }
         
         .button:hover, .page-btn:hover {
@@ -124,7 +132,7 @@
             padding: 20px;
             text-align: center;
             color: #034a49;
-            margin: 80px auto;
+            margin: 60px auto;
             margin-bottom: 120px;
             width: 60%;
             font-size: 18px;
@@ -135,12 +143,23 @@
         }
 
         @media (max-width: 770px) {
-                .button, #signup-btn, #signup {
+            .button, #signup {
                 width: 100%;
-                max-width: 400px;
+                max-width: 300px;
                 font-size: 15px; 
-                margin: 0 auto;
-                
+                margin: 10px auto;
+            }
+
+            #signup-btn {
+                width: 100%;
+                max-width: 150px;
+                font-size: 15px; 
+            }
+            
+            input {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 5px;
             }
         }
     </style>
@@ -177,22 +196,22 @@
     <div id="pages-section">
     <div id="pages-container"> 
         <div class="pages">
-            <img src="paradise.jpg" alt="Services Image"/>
+            <img src="paradise.jpg"/>
             <div class="overlay-text">Custom Itineraries, events, tours, and more!</div>
             <a href="services.html" class="page-btn">Learn More</a>
         </div>
         <div class="pages">
-            <img src="reviewsnubes.jpg" alt="Reviews Image"/>
+            <img src="destinationscan.jpg"/>
+            <div class="overlay-text">Paris, New York, London, ...</div> 
+            <a href="destinations.html" class="page-btn">Learn More</a>
+        </div>
+        <div class="pages">
+            <img src="contactUs.jpg"/>
             <div class="overlay-text">"Best trip of my life!" -Federica I.</div>
             <a href="reviews.html" class="page-btn">Learn More</a>
         </div>
         <div class="pages">
-            <img src="destinationscan.jpg" alt="Destinations Image"/>
-            <div class="overlay-text">Paris, New York, London, ...</div>
-            <a href="destinations.html" class="page-btn">Learn More</a>
-        </div>
-        <div class="pages">
-            <img src="contactUs.jpg" alt="Contact Us Image"/>
+            <img src="reviewsnubes.jpg"/>
             <div class="overlay-text">Have questions?</div>
             <a href="contactus.html" class="page-btn">Learn More</a>
         </div>
@@ -219,9 +238,11 @@
 
     <script>
         $(document).ready(function() {
-            // Fade in h1 first, then h2
+            // Fade in h1 first, then h2, then button
             $(".banner h1").hide().fadeIn(1000, function() {
-                $(".banner h2").hide().fadeIn(500);
+                $(".banner h2").hide().fadeIn(1000, function() {
+                    $(".banner .button").css("visibility", "visible").hide().fadeIn(500);
+                });
             });
         });
     </script>
