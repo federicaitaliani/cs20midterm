@@ -264,12 +264,12 @@
 </body>
 </html>
  -->
- <!doctype html>
+<!doctype html>
 <html>
 
 <head>
     <title>Escape Route</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
@@ -280,10 +280,11 @@
             text-align: center;
             height: 620px;
             padding-top: 120px;
+            position: relative;
         }
 
         .services-banner h1 {
-            font-size: 45px;
+            font-size: 3vw;
             color: #18b5b2;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
             margin: 0 15%;
@@ -298,7 +299,6 @@
             font-size: 22px;
             border: 2px solid #18b5b2;
             border-radius: 10px;
-            text-shadow: none;
             margin-top: 20px;
         }
 
@@ -310,6 +310,9 @@
         .services {
             margin: 40px auto;
             max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .service-item {
@@ -322,21 +325,25 @@
         }
 
         .service-item img {
-            max-width: 100%;
+            max-width: 90%;
             height: auto;
+            margin-bottom: 20px;
         }
 
         .services-text {
             max-width: 600px;
             font-size: 18px;
-            margin: 20px;
+            padding: 0 20px;
         }
 
         .services-text h2 {
             color: #18b5b2;
+            font-size: 1.5em;
+            margin-top: 0;
         }
 
         .separator {
+            width: 80%;
             height: 2px;
             background-color: #f4d7c8;
             margin: 50px 0;
@@ -347,39 +354,31 @@
             color: #18b5b2;
             padding: 10px;
             text-align: center;
+            width: 100%;
         }
 
-        /* Responsive Styles */
         @media (max-width: 768px) {
             .services-banner h1 {
-                font-size: 24px;
-                margin: 0 auto;
+                font-size: 5vw;
             }
-
+            
             .services-banner .button {
                 font-size: 18px;
                 padding: 8px 16px;
-                max-width: 100px;
-                margin: 0 auto;
             }
 
-            .service-item {
-                flex-direction: column;
+            .services-text {
+                font-size: 16px;
+                max-width: 100%;
+                padding: 0 10px;
+            }
+
+            .separator {
+                width: 90%;
             }
 
             .service-item img {
                 max-width: 80%;
-                margin-bottom: 20px;
-            }
-
-            .services-text {
-                width: 90%;
-                font-size: 16px;
-            }
-
-            .separator {
-                width: 80%;
-                margin: 40px auto;
             }
         }
     </style>
@@ -407,20 +406,75 @@
 
     <div class="services">
         <div class="service-item">
-            <img src="travelBook.jpg" alt="Travel Book">
+            <img src="travelBook.jpg" alt="Custom Travel Itineraries">
             <div class="services-text">
                 <h2>Custom Travel Itineraries</h2>
                 <p>
-                    We specialize in crafting fully personalized itineraries based on your preferences, travel style, and interests.
+                    We specialize in crafting fully personalized itineraries based on your preferences, travel style, and interests. Whether you’re looking for adventure, relaxation, or cultural immersion, we build your journey from scratch, selecting destinations, activities, accommodations, and dining experiences tailored to you.
                 </p>
             </div>
         </div>
 
         <div class="separator"></div>
 
-        <!-- Repeat other service items here with similar structure -->
+        <div class="service-item">
+            <img src="hotel.jpg" alt="Exclusive Accommodation Bookings">
+            <div class="services-text">
+                <h2>Exclusive Accommodation Bookings</h2>
+                <p>
+                    We have access to a global network of unique and luxurious accommodations, from boutique hotels and private villas to eco-lodges and charming bed-and-breakfasts. Every location is hand-picked to ensure it fits your vision of the perfect getaway.
+                </p>
+            </div>
+        </div>
 
-    </div>
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <img src="tour.jpg" alt="Private Tours & Experiences">
+            <div class="services-text">
+                <h2>Private Tours & Experiences</h2>
+                <p>
+                    Gain insider access to some of the world’s most sought-after destinations and experiences. We arrange private, guided tours that immerse you in local culture, history, and landscapes. Every experience is enriching and exclusive.
+                </p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <img src="outdoors.jpg" alt="Adventure Travel & Outdoor Excursions">
+            <div class="services-text">
+                <h2>Adventure Travel & Outdoor Excursions</h2>
+                <p>
+                    For thrill-seekers, we offer adventure-packed trips that include hiking, mountain climbing, diving, safaris, and zip-lining. Our certified guides ensure your adventure is both safe and exhilarating.
+                </p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <img src="events.jpg" alt="Event Planning & Special Celebrations">
+            <div class="services-text">
+                <h2>Event Planning & Special Celebrations</h2>
+                <p>
+                    Whether it’s a milestone birthday, a surprise engagement, or a family reunion, we help you create a memorable celebration in any destination. We handle logistics for both intimate gatherings and large events.
+                </p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="service-item">
+            <img src="cruise.jpg" alt="Luxury Cruise Experiences">
+            <div class="services-text">
+                <h2>Luxury Cruise Experiences</h2>
+                <p>
+                    Escape on a luxury cruise tailored to your interests. Whether exploring the Mediterranean, Caribbean, or Arctic, we hand-pick premium cruises offering gourmet dining, premium accommodations, and exclusive shore excursions.
+                </p>
+            </div>
+        </div>
+    </div>   
 
     <footer>
         <p>
@@ -429,12 +483,14 @@
     </footer>
 
     <script>
-        $(document).ready(function () {
-            $(".services-banner h1").hide().fadeIn(1000);
-            $(".services-banner .button").hide().fadeTo(1000, 1);
+        $(document).ready(function() {
+            $(".services-banner .button").hide(); 
+            $(".services-banner h1").hide().fadeIn(1000, function() {
+                console.log("Header animation complete, now fading in button.");
+                $(".services-banner .button").fadeTo(500, 1); 
+            });
         });
     </script>
 
 </body>
-
 </html>
