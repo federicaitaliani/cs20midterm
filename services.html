@@ -126,6 +126,10 @@
         }
 
         @media (max-width: 600px) {
+            .services-banner h1 {
+                font-size: 38px;
+            }
+
             .service-item img {
                 max-width: 300px;
             }
@@ -134,7 +138,6 @@
                 font-size: 16px;
             }
         }
-
     </style>
 
 </head>
@@ -257,7 +260,7 @@
         $(document).ready(function() {
             $(".services-banner .button").hide(); 
             $(".services-banner h1").hide().fadeIn(1000, function() {
-                $(".services-banner .button").fadeTo(500, 1); // Smoothly fade in the button to full opacity
+                $(".services-banner .button").fadeTo(500, 1); 
             });
         });
     </script>
