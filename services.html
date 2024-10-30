@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html>
 
 <head>
@@ -262,4 +262,179 @@
     
 
 </body>
+</html>
+ -->
+ <!doctype html>
+<html>
+
+<head>
+    <title>Escape Route</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        .services-banner {
+            background-image: url("mainback.jpg");
+            background-size: cover;
+            background-position: center top;
+            text-align: center;
+            height: 620px;
+            padding-top: 120px;
+        }
+
+        .services-banner h1 {
+            font-size: 45px;
+            color: #18b5b2;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+            margin: 0 15%;
+        }
+
+        .services-banner .button {
+            padding: 10px 20px;
+            background-color: #a9e4d9;
+            color: #18b5b2;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 22px;
+            border: 2px solid #18b5b2;
+            border-radius: 10px;
+            text-shadow: none;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            color: #f4d7c8;
+            background-color: #18b5b2;
+        }
+
+        .services {
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+
+        .service-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .service-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .services-text {
+            max-width: 600px;
+            font-size: 18px;
+            margin: 20px;
+        }
+
+        .services-text h2 {
+            color: #18b5b2;
+        }
+
+        .separator {
+            height: 2px;
+            background-color: #f4d7c8;
+            margin: 50px 0;
+        }
+
+        footer {
+            background-color: #ebfcff;
+            color: #18b5b2;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .services-banner h1 {
+                font-size: 24px;
+                margin: 0 auto;
+            }
+
+            .services-banner .button {
+                font-size: 18px;
+                padding: 8px 16px;
+                max-width: 100px;
+                margin: 0 auto;
+            }
+
+            .service-item {
+                flex-direction: column;
+            }
+
+            .service-item img {
+                max-width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .services-text {
+                width: 90%;
+                font-size: 16px;
+            }
+
+            .separator {
+                width: 80%;
+                margin: 40px auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html"><img src="logo.jpg" alt="Logo" class="logo"></a>
+        <ul id="nav">
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="book-now.html">Book</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="services-banner">
+        <h1>Discover a world crafted just for you with our exclusive, tailored travel services.</h1>
+        <a href="book-now.html" class="button">Book Now</a>
+    </div>
+
+    <div class="services">
+        <div class="service-item">
+            <img src="travelBook.jpg" alt="Travel Book">
+            <div class="services-text">
+                <h2>Custom Travel Itineraries</h2>
+                <p>
+                    We specialize in crafting fully personalized itineraries based on your preferences, travel style, and interests.
+                </p>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <!-- Repeat other service items here with similar structure -->
+
+    </div>
+
+    <footer>
+        <p>
+            Escape Route &copy; 2024 | Email: <a class="email-link" href="#">info@escaperoute.org</a>
+        </p>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $(".services-banner h1").hide().fadeIn(1000);
+            $(".services-banner .button").hide().fadeTo(1000, 1);
+        });
+    </script>
+
+</body>
+
 </html>
