@@ -5,7 +5,6 @@
     <title>Escape Route</title>
     <link rel="stylesheet" href="style.css"/>
     <style type="text/css">
-        /* Contact Form Styling */
         .contact-container {
             max-width: 600px;
             margin: 100px auto;
@@ -18,7 +17,7 @@
         }
 
         .contact-container h1 {
-            font-size: 35px;
+            font-size: 38px;
             color: #18b5b2;
         }
 
@@ -52,29 +51,27 @@
         .button {
             padding: 10px 20px;
             background-color: #f4d7c8; 
-            color: #18b5b2;
+            color: #034a49;
             border-radius: 5px;
             display: inline-block;
             text-transform: uppercase;
             font-size: 14px;
             border: none;
             margin-top: 15px;
-            width: 30%;
+            width: 100%;
+            max-width: 200px;
             text-align: center;
         }
 
         .button:hover {
-            background-color: #3e2d99;
-            color: #f6f9cf;
+            background-color: #18b5b2;
+            color: #f4d7c8;
         }
 
-        @media (max-width: 768px) {
-            .contact-container, .contact-container h1 ,.contact-container textarea, .contact-container textarea, .button{
+        @media (max-width: 770px) {
+            .contact-container, .contact-container textarea {
                 width: 100%;
                 max-width: 400px;
-                font-size: 15px; 
-                margin: 0 auto;
-                
             }
         }
 
@@ -84,7 +81,6 @@
 </head>
 
 <body>
-    <!-- Top Navigation Bar -->
     <nav class="navbar">
         <a href="index.html"><img src="logo.jpg" alt="Logo" class="logo"></a>
         <ul id="nav">
@@ -97,7 +93,6 @@
         </ul>
     </nav>
 
-    <!-- Contact Us Form -->
     <div class="contact-container">
         <h1>Contact us!</h1>
         <form action="#" method="POST">
