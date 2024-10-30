@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 
@@ -14,27 +13,28 @@
             background-position: center top;
             text-align: center;
             height: 620px;
+            padding: 80px auto;
             padding-top: 120px;
-            position: relative;
         }
 
         .services-banner h1 {
-            font-size: 3vw;
+            font-size: 45px;
             color: #18b5b2;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
-            margin: 0 15%;
+            margin: 0 15%; 
         }
 
         .services-banner .button {
             padding: 10px 20px;
-            background-color: #a9e4d9;
+            background-color: #a9e4d9; 
             color: #18b5b2;
             display: inline-block;
             text-transform: uppercase;
             font-size: 22px;
             border: 2px solid #18b5b2;
             border-radius: 10px;
-            margin-top: 20px;
+            text-shadow: none;
+            margin-top: 40px;
         }
 
         .button:hover {
@@ -43,78 +43,98 @@
         }
 
         .services {
-            margin: 40px auto;
+            margin: 40px auto; 
             max-width: 1200px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
 
         .service-item {
+            position: relative;
+            margin-bottom: 50px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin: 50px auto;
-            text-align: center;
+            align-items: flex-start;
         }
 
         .service-item img {
-            max-width: 90%;
+            width: 450px; 
             height: auto;
-            margin-bottom: 20px;
+            margin-right: 140px; 
         }
 
         .services-text {
-            max-width: 600px;
+            display: inline-block;
+            width: 45%;
             font-size: 18px;
-            padding: 0 20px;
+            margin-top: 3%;
         }
 
         .services-text h2 {
             color: #18b5b2;
-            font-size: 1.5em;
-            margin-top: 0;
         }
 
         .separator {
-            width: 80%;
+            width: 100%; 
+            max-width: 1200px; 
+            margin: 50px auto; 
             height: 2px;
             background-color: #f4d7c8;
         }
 
         footer {
-            background-color: #ebfcff;
+            background-color: #ebfcff; 
             color: #18b5b2;
             padding: 10px;
-            text-align: center;
-            width: 100%;
+            width: 100%; 
         }
 
-        @media (max-width: 768px) {
-            .services-banner h1 {
-                font-size: 10vw;
+        /* Responsive adjustments */
+        @media (max-width: 1200px) {
+            .services-text {
+                padding-right: 80px;
             }
-            
-            .services-banner .button {
-                font-size: 18px;
-                padding: 8px 16px;
+
+            .service-item img {
+                width: 100%;
+                max-width: 400px;
+                margin-left: 60px;
+            }
+
+            .separator {
+                max-width: 90%;
+            }
+        }
+
+
+        @media (max-width: 1000px) {
+            .service-item {
+                flex-direction: column; 
+                align-items: center; 
+            }
+
+            .service-item img {
+                margin-right: 0;
+                margin-left: 0;
+                margin-bottom: 20px; 
+                max-width: 400px; 
+            }
+
+            .services-text {
+                width: 100%; 
+                text-align: center; 
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .service-item img {
+                max-width: 300px;
             }
 
             .services-text {
                 font-size: 16px;
-                max-width: 100%;
-                padding: 0 10px;
-            }
-
-            .separator {
-                width: 90%;
-            }
-
-            .service-item img {
-                max-width: 80%;
             }
         }
+
     </style>
 
 </head>
@@ -140,13 +160,14 @@
 
     <div class="services">
         <div class="service-item">
-            <img src="travelBook.jpg" alt="Custom Travel Itineraries">
+            <img src="travelBook.jpg" />
             <div class="services-text">
                 <h2>Custom Travel Itineraries</h2>
                 <p>
-                    We specialize in crafting fully personalized itineraries based on your preferences, travel style, and interests.
-                    Whether you’re looking for adventure, relaxation, or cultural immersion, we build your journey from scratch, selecting
-                    destinations, activities, accommodations, and dining experiences tailored to you.
+                    We specialize in crafting fully personalized itineraries based on your
+                    preferences, travel style, and interests. Whether you’re looking for adventure,
+                    relaxation, or cultural immersion, we build your journey from scratch, selecting
+                    destinations, activities, accommodations, and dining experiences that are tailored to you.
                 </p>
             </div>
         </div>
@@ -154,12 +175,14 @@
         <div class="separator"></div>
 
         <div class="service-item">
-            <img src="hotel.jpg" alt="Exclusive Accommodation Bookings">
+            <img src="hotel.jpg" />
             <div class="services-text">
                 <h2>Exclusive Accommodation Bookings</h2>
                 <p>
-                    We have access to a global network of unique and luxurious accommodations, from boutique hotels and private villas to
-                    eco-lodges and charming bed-and-breakfasts. Every location is hand-picked to ensure it fits your vision of the perfect getaway.
+                    We have access to a global network of unique and
+                    luxurious accommodations, from boutique hotels and private villas to eco-lodges
+                    and charming bed-and-breakfasts. We hand-pick every location to ensure it fits your
+                    vision of the perfect getaway.
                 </p>
             </div>
         </div>
@@ -167,12 +190,14 @@
         <div class="separator"></div>
 
         <div class="service-item">
-            <img src="tour.jpg" alt="Private Tours & Experiences">
+            <img src="tour.jpg" />
             <div class="services-text">
                 <h2>Private Tours & Experiences</h2>
                 <p>
-                    Gain insider access to some of the world’s most sought-after destinations and experiences. We arrange private,
-                    guided tours that immerse you in local culture, history, and landscapes. Every experience is enriching and exclusive.
+                    Gain insider access to some of the world’s most sought-after destinations
+                    and experiences. We arrange private, guided tours that immerse you in local culture,
+                    history, and landscapes. From private city tours and cooking classes with local chefs
+                    to off-the-beaten-path excursions, we ensure every experience is enriching and exclusive.
                 </p>
             </div>
         </div>
@@ -180,12 +205,14 @@
         <div class="separator"></div>
 
         <div class="service-item">
-            <img src="outdoors.jpg" alt="Adventure Travel & Outdoor Excursions">
+            <img src="outdoors.jpg" />
             <div class="services-text">
                 <h2>Adventure Travel & Outdoor Excursions</h2>
                 <p>
-                    For thrill-seekers, we offer adventure-packed trips that include hiking, mountain climbing, diving, safaris, and zip-lining.
-                    Our certified guides ensure your adventure is both safe and exhilarating.
+                    For the thrill-seekers, we offer adventure-packed trips that include everything 
+                    from hiking and mountain climbing to diving, safaris, and zip-lining. We partner with 
+                    certified guides and experts to ensure your adventure is both safe and exhilarating, 
+                    offering experiences that take you beyond the tourist trail.
                 </p>
             </div>
         </div>
@@ -193,25 +220,28 @@
         <div class="separator"></div>
 
         <div class="service-item">
-            <img src="events.jpg" alt="Event Planning & Special Celebrations">
+            <img src="events.jpg" />
             <div class="services-text">
                 <h2>Event Planning & Special Celebrations</h2>
                 <p>
-                    Whether it’s a milestone birthday, a surprise engagement, or a family reunion, we help you create a memorable celebration
-                    in any destination.We handle logistics for both intimate gatherings and large events.
+                    Whether you’re planning a milestone birthday, a surprise engagement, or a 
+                    family reunion, we can help you create a memorable celebration in any destination. 
+                    From intimate gatherings to large events, we take care of all logistics, ensuring a 
+                    flawless event in an exceptional setting.
                 </p>
             </div>
         </div>
-
+        
         <div class="separator"></div>
 
         <div class="service-item">
-            <img src="cruise.jpg" alt="Luxury Cruise Experiences">
+            <img src="cruise.jpg" />
             <div class="services-text">
                 <h2>Luxury Cruise Experiences</h2>
                 <p>
-                    Escape on a luxury cruise tailored to your interests. Whether exploring the Mediterranean, Caribbean, or Arctic, we hand-pick
-                    premium cruises offering gourmet dining, premium accommodations, and exclusive shore excursions.
+                    Escape on a luxury cruise tailored to your interests, whether you dream of 
+                    exploring the Mediterranean, Caribbean, or the Arctic. We hand-pick the best cruise 
+                    lines that offer premium accommodations, gourmet dining, and exclusive shore excursions.
                 </p>
             </div>
         </div>
@@ -227,11 +257,10 @@
         $(document).ready(function() {
             $(".services-banner .button").hide(); 
             $(".services-banner h1").hide().fadeIn(1000, function() {
-                console.log("Header animation complete, now fading in button.");
-                $(".services-banner .button").fadeTo(500, 1); 
+                $(".services-banner .button").fadeTo(500, 1); // Smoothly fade in the button to full opacity
             });
         });
     </script>
-
+    
 </body>
 </html>
