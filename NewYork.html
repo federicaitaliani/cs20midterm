@@ -5,130 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your New York Adventure</title>
     <link rel="stylesheet" href="style.css" />
-     <style>
-    body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fafafa;
-    color: #444;
-}
+    <style>
+        #header {
+            background-color: #18b5b2;
+            padding: 60px 20px;
+            text-align: center;
+        }
 
-#header {
-    background-color: #d84b6b;
-    padding: 60px 20px;
-    text-align: center;
-    color: #f3f4f6;
-}
+        #header h1 {
+            font-weight: 600;
+            font-size: 44px;
+            margin: 0 0 15px;
+            color: #f4d7c8;
+        }
 
-#header h1 {
-    font-weight: 600;
-    font-size: 44px;
-    margin: 0 0 15px;
-    color: #f3f4f6;
-}
+        #header p {
+            font-size: 19px;
+            color: #f8f8f8;
+            margin: 0;
+        }
 
-#header p {
-    font-size: 19px;
-    color: #f8f8f8;
-    margin: 0;
-}
+        #main-content {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
 
-#main-content {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
+        .section {
+            margin-bottom: 40px;
+            overflow: hidden;
+            border-radius: 15px;
+            background-color: #f8f8f8; 
+        }
 
-.section {
-    margin-bottom: 40px;
-    overflow: hidden;
-    border-radius: 15px;
-    background-color: #f8f8f8; 
-/*     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1); */
-}
+        .section img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
 
-.section img {
-    width: 100%;
-    max-height: 350px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
+        .text-content {
+            padding: 30px;
+        }
 
-.text-content {
-    padding: 30px;
-}
+        .text-content h2 {
+            color: #18b5b2; 
+            font-weight: 600;
+            margin: 0 0 15px;
+            font-size: 28px;
+        }
 
-.text-content h2 {
-    color: #d84b6b; 
-    font-weight: 600;
-    margin: 0 0 15px;
-    font-size: 29px;
-}
+        .text-content p {
+            line-height: 24px;
+            font-size: 16px;
+            color: #555; 
+        }
 
-.text-content p {
-    line-height: 24px;
-    font-size: 16px;
-    color: #555; 
-}
+        #itinerary {
+            padding: 0;
+            text-align: center;
+            border-radius: 12px;
+        }
 
-#itinerary {
-    padding: 0;
-    text-align: center;
-}
+        .itinerary-header {
+            background-color: #18b5b2;
+            color: #f4d7c8;
+            padding: 20px;
+            /* border-radius: 12px; */
+            /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
+            margin-bottom: 20px;
+        }
 
-.itinerary-header {
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
+        #itinerary ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
 
-#itinerary ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
+        #itinerary li {
+            margin-bottom: 20px;
+        }
 
-#itinerary li {
-    margin-bottom: 20px;
-}
+        #itinerary h2 {
+            font-size: 32px;
+        }
 
-#itinerary li h3 {
-    color: #d84b6b;
-    font-weight: 600;
-    font-size: 22px;
-    margin: 0 0 10px;
-}
+        #itinerary li h3 {
+            color: #18b5b2;
+            font-weight: 600;
+            font-size: 22px;
+            margin: 0 0 10px;
+        }
 
-#itinerary li p {
-    margin: 0;
-    font-size: 15px;
-    line-height: 24px;
-    color: #555;
-}
-@media (max-width: 768px) {
-    h1 {
-        font-size: 32px;
-    }
+        #itinerary li p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 24px;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
 
-    .itinerary-day {
-        min-width: 100%;
-    }
-}
+            .itinerary-day {
+                min-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <ul id="nav">
-        <li><a href='index.html'>Home</a></li>
-        <li><a href='aboutus.html'>About</a></li>
-        <li><a href='services.html'>Services</a></li>
-        <li><a href='destinations.html'>Destinations</a></li>
-        <li><a href='reviews.html'>Reviews</a></li>
-        <li><a href='contactus.html'>Contact</a></li>
-    </ul>
+    <nav class="navbar">
+        <a href="index.html"><img src="logo.jpg" alt="Logo" class="logo"></a>
+        <ul id="nav">
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="book-now.html">Book</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Header Section -->
     <div id="header">
