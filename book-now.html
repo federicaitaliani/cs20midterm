@@ -63,7 +63,8 @@
 
         #costDisplay {
             display: none;
-            margin-bottom: 15px;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
 
 		footer {
@@ -180,16 +181,16 @@
             });
         };
 
-		function validate() {
+        function validate() {
 
-			let reqFields = ["destination", "service-type", "start-date", "end-date", "travelers"]
-			let reqNames = ["Destination", "Type of Service", "Start Date", "End Date", "Number of Travelers"]
-			let err = ""
+            let reqFields = ["destination", "service-type", "start-date", "end-date", "travelers"];
+            let reqNames = ["Destination", "Type of Service", "Start Date", "End Date", "Number of Travelers"];
+            let err = "";
 
-            for (i=0;i<reqFields.length;i++)
-            {
-                if (document.getElementById(reqFields[i]).value == "")
-                    err +=  reqNames[i] + " is required<br/>";
+            for (i = 0; i < reqFields.length; i++) {
+                if (document.getElementById(reqFields[i]).value == "") {
+                    err += reqNames[i] + " is required<br/>";
+                }
             }
 
             const timeRadios = document.getElementsByName("time");
@@ -206,22 +207,21 @@
                 err += "Preferred Travel Time is required<br/>";
             }
 
-            if (err !== "") 
-            {
-                document.getElementById('error').innerHTML =
-                        "Fix the following errors to continue:<br>" + err;
+            if (err !== "") {
+                document.getElementById('error').innerHTML = "Fix the following errors to continue:<br>" + err;
+                document.getElementById('costDisplay').style.display = 'none'; 
                 return false;
-            }  else {
+            } else {
                 document.getElementById("error").innerHTML = "";
                 return true;
             }
-		}
+        }
 
         var servicePrices = {
-            "travel-planning": 100,
-            "accommodation-transportation": 500,
-            "experiences": 300,
-            "events": 2000
+            "travel-planning": 200,
+            "accommodation-transportation": 400,
+            "experiences": 650,
+            "events": 800
         };
 
         function calculateCost() {
