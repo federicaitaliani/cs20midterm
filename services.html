@@ -2,10 +2,11 @@
 <html>
 
 <head>
-    <title>Escape Route</title>
+    <title>Services - Escape Route</title>
     <link rel="stylesheet" href="style.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="travel services, vacation planning, accommodation, experiences, events">
     <style type="text/css">
         .services-banner {
             background-image: url("mainback.jpg");
@@ -86,7 +87,6 @@
             width: 100%; 
         }
 
-        /* Responsive adjustments */
         @media (max-width: 1200px) {
             .services-text {
                 padding-right: 80px;
@@ -102,7 +102,6 @@
                 max-width: 90%;
             }
         }
-
 
         @media (max-width: 1000px) {
             .service-item {
@@ -139,11 +138,10 @@
             }
         }
     </style>
-
 </head>
 
 <body>
-
+    <!-- Navigation bar -->
     <nav class="navbar">
         <a href="index.html"><img src="logo.jpg" alt="Logo" class="logo"></a>
         <ul id="nav">
@@ -156,11 +154,13 @@
         </ul>
     </nav>
 
+    <!-- Banner -->
     <div class="services-banner">
         <h1>Discover a world crafted just for you with our exclusive, tailored travel services.</h1>
         <a href="book-now.html" class="button">Book Now</a>
     </div>
 
+    <!-- Services section -->
     <div class="services">
         <div class="service-item">
             <img src="travelBook.jpg" />
@@ -250,6 +250,7 @@
         </div>
     </div>   
 
+    <!-- Footer -->
     <footer>
         <p>
             Escape Route &copy; 2024 | Email: <a class="email-link" href="#">info@escaperoute.org</a>
@@ -257,7 +258,9 @@
     </footer>
 
     <script>
+        // Fade effect for button 
         $(document).ready(function() {
+            // Fade in h1 first, then button
             $(".services-banner .button").hide(); 
             $(".services-banner h1").hide().fadeIn(1000, function() {
                 $(".services-banner .button").fadeTo(500, 1); 
