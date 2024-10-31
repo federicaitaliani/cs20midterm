@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="travel, vacation, booking, travel planning, accommodations, experiences, events">
     <style type="text/css">
         .banner {
             background-image: url("mainback.jpg");
@@ -73,7 +74,7 @@
         
         .button:hover, .page-btn:hover {
             background-color: #18b5b2;
-            color: #f4d7c8;;
+            color: #f4d7c8;
         }
         
         .pages {
@@ -103,7 +104,11 @@
             font-weight: bold;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
             z-index: 1;
-            pointer-events: none; 
+            pointer-events: none;
+        }
+
+        #services-txt {
+            padding-bottom: 20px;
         }
 
         .page-btn {
@@ -185,6 +190,7 @@
 </head>
 
 <body>
+    <!-- Navigation bar -->
     <nav class="navbar">
         <a href="index.html"><img src="logo.jpg" alt="Logo" class="logo"></a>
         <ul id="nav">
@@ -197,12 +203,14 @@
         </ul>
     </nav>
 
+    <!-- Banner -->
     <div class="banner">
         <h1>Escape Route</h1>
         <h2>Find your path to paradise</h2>
         <a href="aboutus.html" class="button">Learn More About Us</a>
     </div>
 
+    <!-- Website purpose -->
     <div id="mission">
         <p>
             At Escape Route, we believe travel is personal, and every journey should be unique.
@@ -211,31 +219,33 @@
         </p>
     </div>
 
+    <!-- Different pages users can go to -->
     <div id="pages-section">
-    <div id="pages-container"> 
-        <div class="pages">
-            <img src="paradise.jpg"/>
-            <div class="overlay-text">Custom Itineraries, events, tours, and more!</div>
-            <a href="services.html" class="page-btn">Learn More</a>
-        </div>
-        <div class="pages">
-            <img src="destinationscan.jpg"/>
-            <div class="overlay-text">Paris, New York, London, ...</div> 
-            <a href="destinations.html" class="page-btn">Learn More</a>
-        </div>
-        <div class="pages">
-            <img src="contactUs.jpg"/>
-            <div class="overlay-text">"Best trip of my life!" -Federica I.</div>
-            <a href="reviews.html" class="page-btn">Learn More</a>
-        </div>
-        <div class="pages">
-            <img src="reviewsnubes.jpg"/>
-            <div class="overlay-text">Have questions?</div>
-            <a href="contactus.html" class="page-btn">Learn More</a>
+        <div id="pages-container"> 
+            <div class="pages">
+                <img src="paradise.jpg"/>
+                <div class="overlay-text" id="services-txt">Custom Itineraries, events, tours, and more!</div>
+                <a href="services.html" class="page-btn">Learn More</a>
+            </div>
+            <div class="pages">
+                <img src="destinationscan.jpg"/>
+                <div class="overlay-text">Paris, New York, London, ...</div> 
+                <a href="destinations.html" class="page-btn">Learn More</a>
+            </div>
+            <div class="pages">
+                <img src="contactUs.jpg"/>
+                <div class="overlay-text">"Best trip of my life!" -Federica I.</div>
+                <a href="reviews.html" class="page-btn">Learn More</a>
+            </div>
+            <div class="pages">
+                <img src="reviewsnubes.jpg"/>
+                <div class="overlay-text">Have questions?</div>
+                <a href="contactus.html" class="page-btn">Learn More</a>
+            </div>
         </div>
     </div>
-</div>
 
+    <!-- Subscribe -->
     <div id="signup">
         <h2>Unlock Exclusive Deals!</h2>
         <p>Subscribe to get access to special discounts, insider travel tips, and the latest destination highlights!</p></p>
@@ -248,6 +258,7 @@
         </form>
     </div>
 
+    <!-- Footer -->
     <footer>
         <p>
             Escape Route &copy; 2024 | Email: <a class="email-link" href="#">info@escaperoute.org</a>
@@ -255,6 +266,7 @@
     </footer>
 
     <script>
+        // Fade effect in banner
         $(document).ready(function() {
             // Fade in h1 first, then h2, then button
             $(".banner h1").hide().fadeIn(1000, function() {
