@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="travel company, about Escape Route, travel planning, personalized vacations, travel experiences">
     <style type="text/css">
         .about-banner {
             background-image: url("mainback.jpg");
@@ -47,25 +48,6 @@
             margin: 20px 0;
             font-size: 18px;
         }
-        
-        .cta {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .cta a {
-            padding: 12px 24px;
-            background-color: #18b5b2;
-            color: #ffffff;
-            border-radius: 5px;
-            font-size: 20px;
-            transition: background-color 0.3s;
-        }
-
-        .cta a:hover {
-            background-color: #f4d7c8;
-            color: #18b5b2;
-        }
 
         @media (max-width: 1000px) {
             .about-banner {
@@ -85,14 +67,14 @@
             }
 
             #about {
-                max-width: 500px;
+                max-width: 400px;
                 font-size: 15px;
             }
         }
 
-        @media (max-width: 550px) {
+        @media (max-width: 450px) {
             #about {
-                max-width: 400px;
+                max-width: 350px;
                 font-size: 22px;
             }
         }
@@ -100,6 +82,8 @@
 </head>
 
 <body>
+
+    <!-- Navigation bar -->
     <nav class="navbar">
         <a href="index.html"><img src="logo.jpg" alt="Logo" class="logo"></a>
         <ul id="nav">
@@ -112,12 +96,14 @@
         </ul>
     </nav>
 
+    <!-- Banner -->
     <div class="about-banner">
         <h2>
             Discover Your Next Adventure with Escape Route
         </h2>
     </div>
 
+    <!-- About section -->
     <div id="about">
         <h1>About Us</h1>
         
@@ -146,6 +132,7 @@
         </p>
     </div>
 
+    <!-- Footer -->
     <footer>
         <p>
             Escape Route &copy; 2024 | Email: <a class="email-link" href="#">info@escaperoute.org</a>
@@ -153,6 +140,7 @@
     </footer>
 
     <script>
+        // Fade effect in banner
         $(document).ready(function() {
             $(".about-banner h2").hide().fadeIn(1000)
         });
