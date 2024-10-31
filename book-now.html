@@ -2,16 +2,14 @@
 <html>
 
 <head>
-    <title>About Us - Escape Route</title>
+    <title>Book Now - Escape Route</title>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .container { 
-			margin: 0 auto;
+			margin: 100px auto;
 			padding: 20px; 
 			border: 2px solid #18b5b2; 
-			margin-top: 100px; 
-			margin-bottom: 100px;
 			border-radius: 10px; 
             width: 100%;
 			max-width: 800px;
@@ -102,9 +100,16 @@
                 width: 120px;
             }
         }
+
+        @media (max-width: 450px) {
+            .container {
+                width: 350px;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation bar -->
 	<nav class="navbar">
         <a href="index.html"><img src="logo.jpg" alt="Logo" class="logo"></a>
         <ul id="nav">
@@ -116,11 +121,12 @@
             <li><a href="contactus.html">Contact</a></li>
         </ul>
     </nav>
-	
-    <div class="container">
 
+    <!-- Booking container -->
+    <div class="container">
         <h1>Book Your Travel</h1>
 
+        <!-- Booking form -->
         <form id="booking-form">
             <label>Destination</label>
             <input type="text" id="destination" name="destination" placeholder="Enter your destination">
@@ -156,10 +162,10 @@
         </form>
 
         <div id="error">&nbsp;</div>
-
         <div class="cost" id="costDisplay">Total Cost: $0</div>
     </div>
 
+    <!-- Footer -->
 	<footer>
         <p>
             Escape Route &copy; 2024 | Email: <a class="email-link" href="#">info@escaperoute.org</a>
@@ -169,30 +175,35 @@
     <script>
 
         window.onload = function() {
+            // Reset the booking form when the page loads
             document.getElementById("booking-form").reset();  
 
             document.getElementById("booking-form").addEventListener("submit", function(event) {
+                // Prevent form submission if validation fails
                 if (!validate()) {
                     event.preventDefault();
                 } else {
-                    calculateCost();
+                    // Calculate cost if validation passes
+                    calculateCost(); 
                     event.preventDefault();
                 }
             });
         };
 
         function validate() {
-
+            // Required field IDs and names for error messages
             let reqFields = ["destination", "service-type", "start-date", "end-date", "travelers"];
             let reqNames = ["Destination", "Type of Service", "Start Date", "End Date", "Number of Travelers"];
             let err = "";
 
+            // Check each required field for a value
             for (i = 0; i < reqFields.length; i++) {
                 if (document.getElementById(reqFields[i]).value == "") {
                     err += reqNames[i] + " is required<br/>";
                 }
             }
 
+            // Check if any 'Preferred Travel Time' radio button is selected
             const timeRadios = document.getElementsByName("time");
             let isTimeSelected = false;
 
@@ -207,6 +218,7 @@
                 err += "Preferred Travel Time is required<br/>";
             }
 
+            // Display errors if found, otherwise clear the error message
             if (err !== "") {
                 document.getElementById('error').innerHTML = "Fix the following errors to continue:<br>" + err;
                 document.getElementById('costDisplay').style.display = 'none'; 
@@ -224,6 +236,7 @@
             "events": 800
         };
 
+        // Calculate booking cost 
         function calculateCost() {
             let serviceType = document.getElementById("service-type").value;
             let travelers = parseInt(document.getElementById("travelers").value)
